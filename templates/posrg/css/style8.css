@@ -1,0 +1,263 @@
+/**
+ * style 8 - wire framing
+ ----------------------*/
+a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
+	color: #ccc;
+}
+
+.sidebar-left {
+padding-right: 0;
+}
+
+.sidebar-right {
+padding-left: 0;
+}
+
+div#below-content {
+	margin-top: 10px;
+}
+
+div.module,
+.sequence,
+div#slider,
+#content-area {
+	background: #ccc !important;
+	padding: 7px;
+}
+
+body,
+aside.sidebar-right div.module div.module-content ul.nav li a,
+#bottom2 .module ul.menu > li a,
+#bottom2 .module-title h3,
+#bottom2 h2,
+#bottom2,
+.sequence {
+	color: #000;
+}
+
+div#above-content {
+	margin-bottom: 10px;
+}
+
+.module.color-title .module-title {
+	background: #ccc;
+}
+
+.nav .caret {
+border-top-color: #ccc;
+border-bottom-color: #ccc;
+}
+.nav a:hover .caret {
+border-top-color: #ccc;
+border-bottom-color: #ccc;
+}
+
+
+.module.style-color {
+	background:#ccc;
+	color: #000;
+	padding: 20px;
+}
+
+.module.style-color  a {
+	color: #000;
+}
+.module.style-color a:hover {
+	color: #000;
+}
+.module.style-color .module-title {
+	border: 0;
+}
+
+.module.style-color .module-title h3 {
+	color: #000;
+	border: 0;
+}
+
+.module.border-color .module-title {
+	border-bottom: 3px solid #ccc;
+}
+
+.module.border-color-top .module-title {
+	border-top: 3px solid #ccc;
+	border-bottom: 0;
+}
+
+.portfolio-nav .joostrap.btn-group a.btn:hover,
+.portfolio-nav .joostrap.btn-group a.btn:focus,
+.portfolio-nav .joostrap.btn-group.open a.btn {
+	color: #ccc;
+}
+
+.portfolio-nav .joostrap.btn-group a:hover span.caret {
+	border-top: 4px solid #ccc;
+}
+
+.portfolio-nav .joostrap.btn-group.open a span.caret,
+.portfolio-nav .joostrap.btn-group.open a:focus span.caret {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid #ccc;
+}
+
+.joostrapmenu > li > a:hover,
+.joostrapmenu > li.active > a,
+.joostrapmenu > li.parent:hover > a,
+.joostrapmenu > li.active.parent > a,
+.joostrapmenu > li > span.separator:hover,
+.joostrapmenu > li.active > span.separator,
+.joostrapmenu > li.parent:hover > span.separator,
+.joostrapmenu > li.active.parent > span.separator  {
+	background: #ccc;
+	color:#fff;
+}
+
+.joostrapmenu ul li a:hover,
+.joostrapmenu ul li.active > a,
+.joostrapmenu ul li.parent:hover > a,
+.joostrapmenu ul li.active.parent > a ,
+.joostrapmenu ul li span.separator:hover,
+.joostrapmenu ul li.active > span.separator,
+.joostrapmenu ul li.parent:hover > span.separator,
+.joostrapmenu ul li.active.parent > span.separator {
+	color: #fff;
+	background-color: #ccc;
+}
+
+@media (max-width: 980px) {
+
+}
+
+.tags span a:hover {
+	background-color: #ccc;
+	color: #fff;
+}
+
+dl.tabs dt.tabs.open span h3 a,
+dl.tabs dt.tabs span h3 a:hover,
+.pane-sliders h3.title.pane-toggler-down a span {
+	color: #ccc;
+}
+
+.image-backdrop,
+.img-intro-btn:hover,
+p.img_caption {
+	background-color: #ccc;
+}
+
+.sequence .text-block h2 a:hover {
+	color: #ccc;
+}
+
+.sequence .text-block a.readmore:hover {
+	background-color: #ccc;
+	border: 1px solid #ccc;
+}
+
+.sequence-pagination li span.active,
+.sequence-pagination li span:active {
+	border: 1px solid #ccc;
+	background-color: #ccc;
+}
+
+.sequence-pagination li span:hover {
+	border: 1px solid #ccc;
+}
+
+.joostrap-slider .sequence-preloader .preloading .circle {
+	fill: #ccc !important;
+}
+
+.joostrap-icons .front {
+	background-color: #ccc;
+}
+
+.joostrap-news {
+	background-color: #ccc;
+}
+
+.joostrap-news,
+.joostrap-news p {
+	color: #ccc;
+}
+
+.flex-control-paging li a.flex-active  {
+	border: 1px solid #ccc;
+}
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-list > .active > a:focus {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	background-color: #ccc;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+	color: #ffffff;
+	background-color: #ccc;
+}
+
+.nav .dropdown-toggle .caret {
+	border-top-color: #ccc;
+	border-bottom-color: #ccc;
+	margin-top: 6px;
+}
+
+.nav .dropdown-toggle:hover .caret,
+.nav .dropdown-toggle:focus .caret {
+	border-top-color: #ccc;
+	border-bottom-color: #ccc;
+}
+
+.dropdown-menu > li > a.selected,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+	text-decoration: none;
+	color: #ffffff;
+	background: #ccc;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+	color: #ffffff;
+	text-decoration: none;
+	outline: 0;
+	background: #ccc;
+}
+
+.btn-group.open .btn-primary.dropdown-toggle ,
+.btn-primary {
+	color: #ffffff;
+	background: #ccc;
+	border: 0;
+	*background-color: #ccc;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+	color: #ffffff;
+	background-image: none;
+	background-color: #000000;
+	*background-color: #000000;
+}
+.module.style-color .module-content,
+.module.style-color .module-title {
+	padding: 0 10px;
+}
+.module.style-color {
+	background-clip: content-box;
+	padding: 5px;
+}

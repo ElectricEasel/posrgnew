@@ -1,0 +1,232 @@
+/**
+ * style 1 - grey
+ --------------*/
+a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
+	color: #bfbfbf;
+}
+
+#bottom-bar .container {
+	background-color: #bfbfbf;
+}
+
+.module.color-title .module-title {
+	background: #bfbfbf;
+}
+
+.module.style-color {
+	background:#bfbfbf;
+	color: #fff;
+	padding: 20px;
+}
+
+.module.style-color  a {
+	color: #fff;
+}
+.module.style-color a:hover {
+	color: #000;
+}
+.module.style-color .module-title {
+	border: 0;
+}
+
+.module.style-color .module-title h3 {
+	color: #fff;
+	border: 0;
+}
+
+.module.border-color .module-title {
+	border-bottom: 3px solid #bfbfbf;
+}
+
+.module.border-color-top .module-title {
+	border-top: 3px solid #bfbfbf;
+	border-bottom: 0;
+}
+
+.nav .caret {
+border-top-color: #bfbfbf;
+border-bottom-color: #bfbfbf;
+}
+.nav a:hover .caret {
+border-top-color: #bfbfbf;
+border-bottom-color: #bfbfbf;
+}
+
+.portfolio-nav .joostrap.btn-group a.btn:hover,
+.portfolio-nav .joostrap.btn-group a.btn:focus,
+.portfolio-nav .joostrap.btn-group.open a.btn {
+	color: #bfbfbf;
+}
+
+.portfolio-nav .joostrap.btn-group a:hover span.caret {
+	border-top: 4px solid #bfbfbf;
+}
+
+.portfolio-nav .joostrap.btn-group.open a span.caret,
+.portfolio-nav .joostrap.btn-group.open a:focus span.caret {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid #bfbfbf;
+}
+
+.joostrapmenu > li > a:hover,
+.joostrapmenu > li.active > a,
+.joostrapmenu > li.parent:hover > a,
+.joostrapmenu > li.active.parent > a,
+.joostrapmenu > li > span.separator:hover,
+.joostrapmenu > li.active > span.separator,
+.joostrapmenu > li.parent:hover > span.separator,
+.joostrapmenu > li.active.parent > span.separator  {
+	background: #bfbfbf;
+	color:#fff;
+}
+
+.joostrapmenu ul li a:hover,
+.joostrapmenu ul li.active > a,
+.joostrapmenu ul li.parent:hover > a,
+.joostrapmenu ul li.active.parent > a ,
+.joostrapmenu ul li span.separator:hover,
+.joostrapmenu ul li.active > span.separator,
+.joostrapmenu ul li.parent:hover > span.separator,
+.joostrapmenu ul li.active.parent > span.separator {
+	color: #fff;
+	background-color: #bfbfbf;
+}
+
+@media (max-width: 980px) {
+
+}
+
+.tags span a:hover {
+	background-color: #bfbfbf;
+	color: #fff;
+}
+
+dl.tabs dt.tabs.open span h3 a,
+dl.tabs dt.tabs span h3 a:hover,
+.pane-sliders h3.title.pane-toggler-down a span {
+	color: #bfbfbf;
+}
+
+.image-backdrop,
+.img-intro-btn:hover,
+p.img_caption {
+	background-color: #bfbfbf;
+}
+
+.sequence .text-block h2 a:hover {
+	color: #bfbfbf;
+}
+
+.sequence .text-block a.readmore:hover {
+	background-color: #bfbfbf;
+	border: 1px solid #bfbfbf;
+}
+
+.sequence-pagination li span.active,
+.sequence-pagination li span:active {
+	border: 1px solid #bfbfbf;
+	background-color: #bfbfbf;
+}
+
+.sequence-pagination li span:hover {
+	border: 1px solid #bfbfbf;
+}
+
+.joostrap-slider .sequence-preloader .preloading .circle {
+	fill: #bfbfbf !important;
+}
+
+.joostrap-icons .front {
+	background-color: #bfbfbf;
+}
+
+.joostrap-news {
+	background-color: #bfbfbf;
+}
+
+.joostrap-news,
+.joostrap-news p {
+	color: #bfbfbf;
+}
+
+.flex-control-paging li a.flex-active  {
+	border: 1px solid #bfbfbf;
+}
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-list > .active > a:focus {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	background-color: #bfbfbf;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+	color: #ffffff;
+	background-color: #bfbfbf;
+}
+
+.nav .dropdown-toggle .caret {
+	border-top-color: #bfbfbf;
+	border-bottom-color: #bfbfbf;
+	margin-top: 6px;
+}
+
+.nav .dropdown-toggle:hover .caret,
+.nav .dropdown-toggle:focus .caret {
+	border-top-color: #bfbfbf;
+	border-bottom-color: #bfbfbf;
+}
+
+.dropdown-menu > li > a.selected,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+	text-decoration: none;
+	color: #ffffff;
+	background: #bfbfbf;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+	color: #ffffff;
+	text-decoration: none;
+	outline: 0;
+	background: #bfbfbf;
+}
+
+.btn-group.open .btn-primary.dropdown-toggle ,
+.btn-primary {
+	color: #ffffff;
+	background: #bfbfbf;
+	border: 0;
+	*background-color: #bfbfbf;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+	color: #ffffff;
+	background-image: none;
+	background-color: #000000;
+	*background-color: #000000;
+}
+.module.style-color .module-content,
+.module.style-color .module-title {
+	padding: 0 10px;
+}
+.module.style-color {
+	background-clip: content-box;
+	padding: 5px;
+}

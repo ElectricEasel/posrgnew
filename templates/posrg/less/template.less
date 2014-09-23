@@ -1,0 +1,173 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+body {
+	background: url(../images/bg-body.png) repeat 0 0 #f4f4f4;
+	border-top: 5px solid #000;
+}
+.container {
+	max-width: 990px;
+}
+.logo {
+	background: url(../images/logo.png) no-repeat 0 0 transparent;
+}
+.logo-header {
+	width: 255px;
+	height: 61px;
+	display: block;
+}
+#header {
+	background: #f4f4f4;
+}
+#menu {
+	#gradient.vertical(#0078C7, #005FAA);
+	
+	a {
+		color: #fff;
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+	}
+}
+#slider {
+	.gradient-fade();
+	.container {
+		padding: 0;
+	}
+}
+.gradient-fade {
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.4) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.4)));
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.4) 100%);
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.4) 100%);
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.4) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.4) 100%);
+}
+#home-carousel {
+	.carousel-indicators {
+		margin: 0;
+		left: 0;
+		width: auto;
+		padding-left: 30px;
+		
+		li {
+			border: 0 !important;
+			background: #fff;
+			box-shadow: 1px 1px 1px rgba(0,0,0,0.3) inset;
+			width: 15px !important;
+			height: 15px !important;
+			margin: 0 2px 0 0;
+			&.active {
+				background: @brand-primary;
+			}
+		}
+	}
+}
+#mainbody {
+	.container {
+		background: #fff;		
+	}
+}
+#mainbody .container,
+#slider .container {
+	box-shadow: 4px 0px 3px rgba(0,0,0,0.2),
+				-4px 0 3px rgba(0,0,0,0.2);
+}
+#footer {
+	background: url(../images/bg-footer.png) repeat-x 0 0 #004173;
+	border-top: 6px solid #000;
+	min-height: 355px;
+	color: #fff;
+	
+	.module {
+		.make-sm-column(4);
+	}
+}
+.home .inventory-search {
+	background: #000;
+	border: 3px solid @brand-primary;
+	color: #fff;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 15px 0;
+	
+	input[type="text"],
+	select {
+		.form-control();
+	}
+	legend {
+		border: medium none;
+		color: #fff;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	form {
+		.clearfix();
+	}
+}
+.home #below-content {
+	margin: 10px -7px;
+	.clearfix();
+	
+	.module {
+		.make-sm-column(4);
+		.make-xs-column(6);
+		padding: 9px;
+		@media (min-width: @screen-sm) {
+			&:nth-child(4n+4) {
+				clear: both;
+			}
+		}
+		@media (max-width: @screen-xs-max) {
+			&:nth-child(odd) {
+				clear: both;
+			}
+		}
+		@media (max-width: 400px) {
+			width: 100%;
+			clear: both;
+		}
+	}
+	.module-content {
+		background: #EAEAEA;
+		border-bottom: 1px solid #bfbfbf;
+		height: 100%;
+		
+		img {
+			border-bottom: 5px solid @brand-primary;
+			.img-responsive();
+		}
+	}
+	.module-text {
+		padding: 15px;
+		.clearfix();
+		
+		p {
+			line-height: 1.25em;
+			min-height: 3.75em;
+			font-size: 13px;
+			margin-bottom: 1em;
+		}
+	}
+	h3 {
+		background: url(../images/bg-body.png) repeat 0 0 #f4f4f4;
+		color: @brand-primary;
+		margin: 0;
+		font-size: 16px;
+		padding: 15px;
+		border-bottom: 5px solid @brand-primary;
+	}
+	.module-ebay img {
+		margin: -6px 0 0 0;
+	}
+	.module-trade img {
+		margin: -19px 0 0;
+	}
+	.module-chat img {
+		margin: -12px 0 0;
+	}
+	a.btn {
+		display: inline-block;
+		float: right;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+}

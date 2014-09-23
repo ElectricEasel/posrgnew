@@ -1,0 +1,84 @@
+body.rtl #header .navbar-btn {
+	float:left;
+}
+
+body.rtl #menu .navbar-collapse {
+	float:right;
+}
+
+body.rtl #user-toolbar {
+	float:left;
+}
+
+body.rtl a#totop {
+	right:auto;
+	left:10px;
+}
+
+body.rtl .sidebar-left {
+	border-right:0;
+	border-left:1px solid #f0f0f0;
+	padding-left:25px;
+}
+
+body.rtl .sidebar-right {
+	border-left:0;
+	border-right:1px solid #f0f0f0;
+	padding-right:25px;
+}
+
+body.rtl .joostrap-menu > li {
+	float:right;
+	border-left:0;
+}
+
+body.rtl .joostrap-menu li.parent span.caret {
+	top:50%;
+	right:auto;
+	left:14px;
+}
+
+body.rtl .joostrap-menu > li.parent > a {
+	padding:0 20px 0 30px;
+}
+
+body.rtl .joostrap-menu ul {
+	left:auto;
+	right:0;
+}
+
+body.rtl .joostrap-menu ul li.parent > span.caret {
+	border-right:3px solid #000;
+	border-top:3px solid transparent;
+	border-bottom:3px solid transparent;
+	border-left:3px solid transparent;
+}
+
+body.rtl .joostrap-menu ul li.active > span.caret,body.rtl .joostrap-menu ul li.parent:hover > span.caret {
+	border-right:3px solid #fff;
+	border-left:3px solid transparent;
+}
+
+body.rtl .joostrap-menu ul ul {
+	left:auto;
+	right:100%;
+}
+
+body.rtl #mod-finder-searchform.form-search input {
+	padding:6px 12px 6px 40px;
+}
+
+body.rtl #mod-finder-searchform.form-search input:hover,body.rtl #mod-finder-searchform.form-search input:focus {
+	padding:6px 12px 6px 60px;
+}
+
+body.rtl #mod-finder-searchform.form-search button {
+	position:absolute;
+	top:3px;
+	right:auto;
+	left:3px;
+}
+
+body.rtl .login-modal .close {
+	float:left;
+}

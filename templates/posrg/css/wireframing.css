@@ -1,0 +1,168 @@
+body {
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	display: none;
+}
+
+.navbar {
+	border-top: 3px solid #fff;
+	-webkit-box-shadow: 0 0 0 #fff;
+	box-shadow: 0 0 0 #fff;
+}
+
+div.navbar-header {
+	background-color: #CCC;
+	padding: 5px;
+	width: 184px;
+	height: 65px;
+}
+
+a.navbar-brand {
+	display: none;
+}
+
+ul.nav.menu.navbar-nav {
+	background-color: #CCC;
+	height: 65px;
+}
+
+.navbar-nav>li.active>a {
+	background-color: #ccc;
+	height: 65px;
+}
+
+.carousel {
+	background: #CCC;
+}
+
+.carousel-inner,
+a.left.carousel-control,
+a.right.carousel-control {
+	display: none;
+}
+
+.wrapper .services-top {
+	background: #fff;
+}
+
+.wrapper .services-top {
+	border-bottom: 0;
+	padding: 0;
+}
+
+div.module-content div div div div.row {
+	background-color: #ccc;
+}
+
+.icon-circle {
+	border-radius: 0;
+}
+.icon-green {
+	background-color: #b1b1b1;
+}
+.glyphicon {
+	font-family: none;
+}
+
+div.navbar.footer-nav {
+	background: #ccc;
+}
+
+div.navbar.footer-nav div div.row {
+	background: #CCC;
+}
+
+.footer-3 {
+	background: #CCC;
+	border-top: 3px solid #ccc;
+}
+
+.footer-2 {
+	background: #fff;
+}
+
+.footer-3 .sm-cr-circle1,
+.footer-3 .sm-cr-circle2 {
+	display: none;
+}
+
+div#page-title {
+	background: #CCC;
+}
+ul.breadcrumb {
+	background: #CCC;
+}
+
+.pager li>a, 
+.pager li>span {
+	background-color: #CCC;
+	color: #fff;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	background-color: #ccc;
+}
+
+.pull-right {
+	background-color: #ccc;
+}
+
+a.btn.dropdown-toggle {
+	color: #fff;
+}
+
+/* Custom Media Queries
+ ====================*/
+/*Large desktop*/
+@media (min-width: 1200px) {
+
+}
+
+/* desktop*/
+@media (min-width: 993px) and (max-width: 1199px) {
+
+}
+
+/*Portrait tablet to landscape and desktop*/
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/*Landscape phone to portrait tablet*/
+@media (max-width: 767px) {
+	div.navbar-header {
+		width: 100%;
+		height: auto;
+	}
+	.navbar-nav>li.active>a {
+		height: auto;
+	}
+	ul.nav.menu.navbar-nav {
+		height: auto;
+	}
+	nav.navbar div.container {
+		background-color: #ccc;
+	}
+}
+
+/*Landscape phones and down*/
+@media (max-width: 480px) {
+	div.navbar-header {
+		width: 100%;
+		height: auto;
+	}
+	.navbar-nav>li.active>a {
+		height: auto;
+	}
+	ul.nav.menu.navbar-nav {
+		height: auto;
+	}
+	nav.navbar div.container {
+		background-color: #ccc;
+	}
+}
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type version="1.0.0" name="Product">
+  <params>
+    <param type="buttons" identifier="9e3a55c8-1464-41b0-8c8e-f4718a22538d" name="Quote and Chat" description="" access="0"/>
+    <param type="parentcategory" identifier="e118f82d-db14-41d8-b086-75ce0390a022" name=""/>
+    <param type="text" identifier="f64a39d0-9b8f-4a84-ac90-19744a889cdb" name="Model Number" description="" access="0" default="" repeatable="0"/>
+    <param type="link" identifier="30ee11c5-0d02-424c-8ad5-dc6aa8f733ab" name="Resources" description="" access="0" repeatable="1"/>
+    <param type="text" identifier="4fbb144e-79cf-439a-8c3e-d89663c8131c" name="Features" description="Enter in the features of this item." access="0" default="" repeatable="1"/>
+    <param type="textarea" identifier="ea1e3fa3-e38d-440d-8ca0-e3a6ee0037cc" name="Description" description="" access="0" default="" jplugins="1" repeatable="1"/>
+    <param type="image" identifier="246e955a-5a57-4ad0-ad8c-c15fc7bfccb6" name="Image" description="" access="0" load_lightbox="0" upload_directory="images/stories/zoo/uploads/" max_upload_size="512"/>
+    <param type="download" identifier="df6e63ab-eff2-47ad-b228-0e9b9a295a0a" name="Driver" description="" access="0" directory="images" download_mode="0" upload_extensions="png,jpg,jpeg,doc,mp3,mov,avi,mpg,zip,rar,gz" upload_directory="images/stories/zoo/uploads/" max_upload_size="2048"/>
+    <param type="video" identifier="74ef6e8a-a1e0-4763-a129-8bba9dce2704" name="Video" description="ID of YouTube Video" access="0" directory="images" defaultwidth="647" defaultheight="400" defaultautoplay="0"/>
+    <param type="autorelateditems" identifier="d2e585c0-cc1a-4816-8a41-147ff5ec44c7" name="Related Items" description="" access="0"/>
+  </params>
+</type>

@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="template" client="site">
+	<name>posrg</name>
+	<creationDate>28 May 2014</creationDate>
+	<author>Electric Easel</author>
+	<authorEmail>webmaster@electriceasel.com</authorEmail>
+	<authorUrl>http://www.electriceasel.com.com</authorUrl>
+	<copyright>Copyright (C) 2005 - 2014 Joostrap. All rights reserved.</copyright>
+	<version>1/0</version>
+	<description><![CDATA[ <h2>POSRG Responsive Theme</h2>]]></description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>fields</folder>
+		<folder>fonts</folder>
+		<folder>functions</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>includes</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+		<folder>libraries</folder>
+	</files>
+	<positions>
+		<position>search</position>
+		<position>menu</position>
+		<position>mob-menu-above</position>
+		<position>mob-menu-below</position>
+		<position>slideshow</position>
+		<position>header</position>
+		<position>top</position>
+		<position>breadcrumbs</position>
+		<position>above-content</position>
+		<position>below-content</position>
+		<position>left</position>
+		<position>right</position>
+		<position>bottom</position>
+		<position>footer</position>
+		<position>disclaimer</position>
+		<position>login</position>
+		<position>debug</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_posrg.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_posrg.sys.ini</language>
+	</languages>
+	<updateservers>
+		<server
+			type="extension"
+			priority="1"
+			name="Joostrap Template Updates"><![CDATA[http://www.joostrap.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=4]]>
+		</server>
+	</updateservers>
+	<config>
+		<fields name="params">
+			<fieldset name="JOOSTRAP_TEMPLATECOLORS" addfieldpath="/templates/posrg/admin/elements">
+				<field name="templateStyle" type="list" default="1" label="TPL_JOOSTRAP_TEMPLATECOLOR_LABEL" description="TPL_JOOSTRAP_TEMPLATECOLOR_DESC">
+					<option value="1">TPL_JOOSTRAP_OPTION_STYLE1</option>
+					<option value="2">TPL_JOOSTRAP_OPTION_STYLE2</option>
+					<option value="3">TPL_JOOSTRAP_OPTION_STYLE3</option>
+					<option value="4">TPL_JOOSTRAP_OPTION_STYLE4</option>
+					<option value="5">TPL_JOOSTRAP_OPTION_STYLE5</option>
+					<option value="6">TPL_JOOSTRAP_OPTION_STYLE6</option>
+					<option value="7">TPL_JOOSTRAP_OPTION_STYLE7</option>
+					<option value="8">TPL_JOOSTRAP_OPTION_STYLE8</option>
+				</field>
+			</fieldset>
+
+
+			<fieldset name="JOOSTRAP_LOGOAREA" addfieldpath="/templates/posrg/admin/elements">
+				<field name="logoFile" class="" type="media" default="" label="TPL_JOOSTRAP_LOGO_LABEL" description="TPL_JOOSTRAP_LOGO_DESC" />
+				<field name="logoMarginTop" type="text" class="input-small" default="60" label="TPL_JOOSTRAP_LOGOMARGIN_TOP_LABEL" description="TPL_JOOSTRAP_LOGOMARGIN_TOP_DESC" />
+				<field name="logoMarginBottom" type="text" class="input-small" default="55" label="TPL_JOOSTRAP_LOGOMARGIN_BOTTOM_LABEL" description="TPL_JOOSTRAP_LOGOMARGIN_BOTTOM_DESC" />
+				<field name="sitetitle"  class="" type="text" default="" label="TPL_JOOSTRAP_TEMPLATETITLE_LABEL" description="JFIELD_ALT_PAGE_TITLE_LABEL" filter="string" />
+				<field name="sitedescription"  class="" type="text" default="" label="TPL_JOOSTRAP_TEMPLATE_DESC_LABEL" description="JGLOBAL_SUBHEADING_DESC" filter="string" />
+				<field
+					name="css_style"
+					type="tplasset"
+					asset="admin/style.css"
+				/>
+				<field
+					name="js_color"
+					type="tplasset"
+					asset="admin/color.js"
+				/>
+			</fieldset>
+			<fieldset name="JOOSTRAP_FONTS">
+				<field name="googleFonts" type="radio" class="btn-group" default="0" label="TPL_JOOSTRAP_GFONTS_LABEL" description="TPL_JOOSTRAP_GFONTS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="googleFontName" type="text" class="" default="" label="TPL_JOOSTRAP_FONT_NAME_LABEL" description="TPL_JOOSTRAP_FONT_NAME_DESC" />
+				<field name="googleFontSelectors" type="textarea" class="" default="" label="TPL_JOOSTRAP_GFONTS_SELECTORS_LABEL" description="TPL_JOOSTRAP_GFONTS_SELECTORS_DESC" rows="4" columns="30" filter="raw" />
+				<field name="googleFontsSecond" type="radio" class="btn-group" default="0" label="TPL_JOOSTRAP_GFONTS_LABEL" description="TPL_JOOSTRAP_GFONTS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="googleFontNameSecond" type="text" class="" default="" label="TPL_JOOSTRAP_FONT_NAME_LABEL" description="TPL_JOOSTRAP_FONT_NAME_DESC" />
+				<field name="googleFontSelectorsSecond" type="textarea" class="" default="" label="TPL_JOOSTRAP_GFONTS_SELECTORS_LABEL" description="TPL_JOOSTRAP_GFONTS_SELECTORS_DESC" rows="4" columns="30" filter="raw" />
+			</fieldset>
+			<fieldset name="JOOSTRAP_MODULES">
+				<field name="sidebarLeftWidth" type="list" default="4" label="Left Sidebar (Width)" description="TPL_JOOSTRAP_SIDEBAR_LEFT_WIDTH_DESC">
+					<option value="2">TPL_JOOSTRAP_OPTION_SIDEBAR_LEFT_SPAN2</option>
+					<option value="3">TPL_JOOSTRAP_OPTION_SIDEBAR_LEFT_SPAN3</option>
+					<option value="4">TPL_JOOSTRAP_OPTION_SIDEBAR_LEFT_SPAN4</option>
+					<option value="5">TPL_JOOSTRAP_OPTION_SIDEBAR_LEFT_SPAN5</option>
+				</field>
+				<field name="sidebarRightWidth" type="list" default="4" label="Right Sidebar (Width)" description="TPL_JOOSTRAP_SIDEBAR_RIGHT_WIDTH_DESC">
+					<option value="2">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN2</option>
+					<option value="3">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN3</option>
+					<option value="4">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN4</option>
+					<option value="5">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN5</option>
+					<option value="6">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN6</option>
+				</field>
+				<field
+					name="bodyclass"
+					class=""
+					type="text"
+					default=""
+					label="TPL_JOOSTRAP_BODYCLASS_LABEL"
+					description="TPL_JOOSTRAP_BODYCLASS_DESC"
+					filter="string"
+				/>
+			</fieldset>
+			<fieldset name="JOOSTRAP_LOGOAREA" addfieldpath="/templates/posrg/fields">
+				<field
+					name="logoFile"
+					class=""
+					type="media"
+					default=""
+					label="TPL_JOOSTRAP_LOGO_LABEL"
+					description="TPL_JOOSTRAP_LOGO_DESC"
+				/>
+				<field
+					name="logoMarginTop"
+					type="text"
+					class="input-small"
+					default="0"
+					label="TPL_JOOSTRAP_LOGOMARGIN_TOP_LABEL"
+					description="TPL_JOOSTRAP_LOGOMARGIN_TOP_DESC"
+				/>
+				<field
+					name="logoMarginBottom"
+					type="text"
+					class="input-small"
+					default="0"
+					label="TPL_JOOSTRAP_LOGOMARGIN_BOTTOM_LABEL"
+					description="TPL_JOOSTRAP_LOGOMARGIN_BOTTOM_DESC"
+				/>
+				<field
+					name="sitetitle"
+					class=""
+					type="text"
+					default="Your Logo"
+					label="TPL_JOOSTRAP_TEMPLATETITLE_LABEL"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string"
+				/>
+				<field
+					name="sitedescription"
+					class=""
+					type="text"
+					default=""
+					label="TPL_JOOSTRAP_TEMPLATE_DESC_LABEL"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string"
+				/>
+				<field
+					name="css_style"
+					type="tplasset"
+					asset="admin/style.css"
+				/>
+				<field
+					name="js_color"
+					type="tplasset"
+					asset="admin/color.js"
+				/>
+			</fieldset>
+			<fieldset name="JOOSTRAP_MODULES">
+				<field
+					name="sidebarLeftWidth"
+					type="list"
+					default="4"
+					label="Left Sidebar (Width)"
+					description="TPL_JOOSTRAP_SIDEBAR_LEFT_WIDTH_DESC"
+					>
+						<option value="2">TPL_JOOSTRAP_OPTION_SIDEBAR_LEFT_SPAN2</option>
+						<option value="3">TPL_JOOSTRAP_OPTION_SIDEBAR_LEFT_SPAN3</option>
+						<option value="4">TPL_JOOSTRAP_OPTION_SIDEBAR_LEFT_SPAN4</option>
+						<option value="5">TPL_JOOSTRAP_OPTION_SIDEBAR_LEFT_SPAN5</option>
+				</field>
+				<field
+					name="sidebarRightWidth"
+					type="list"
+					default="4"
+					label="Right Sidebar (Width)"
+					description="TPL_JOOSTRAP_SIDEBAR_RIGHT_WIDTH_DESC"
+					>
+						<option value="2">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN2</option>
+						<option value="3">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN3</option>
+						<option value="4">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN4</option>
+						<option value="5">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN5</option>
+						<option value="6">TPL_JOOSTRAP_OPTION_SIDEBAR_RIGHT_SPAN6</option>
+				</field>
+				<field
+					name="bodyclass"
+					class=""
+					type="text"
+					default=""
+					label="TPL_JOOSTRAP_BODYCLASS_LABEL"
+					description="TPL_JOOSTRAP_BODYCLASS_DESC"
+					filter="string"
+				/>
+
+			</fieldset>
+
+			<fieldset name="JOOSTRAP_OFFCANVASS">
+				<field name="note13" type="note" class="alert alert-success" label="How do I use this option?" description="This option is used for: &lt;br /&gt;1. Choosing where the off-canvass menu slides in from. &lt;br /&gt;2. Changing the icons used for the home &amp; close links.
+				&lt;br&gt;For the icon class, we suggest using &lt;a href=&quot;http:&#47;&#47;fontawesome.io/icons/&quot;&gt;fontawesome.io/icons/&lt;&#47;a&gt; which is already baked into this template. " />
+				<field
+					name="menuslide"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="TPL_JOOSTRAP_MENUSLIDE_LABEL"
+					description="TPL_JOOSTRAP_MENUSLIDE_DESC"
+					>
+						<option value="left">Left</option>
+						<option value="right">Right</option>
+						<option value="top">Top</option>
+						<option value="bottom">Bottom</option>
+				</field>
+				<field
+					name="icon1"
+					type="text"
+					class=""
+					default="fa fa-home"
+					label="TPL_JOOSTRAP_ICON1_LABEL"
+					description="TPL_JOOSTRAP_ICON1_DESC"
+				/>
+				<field
+					name="icon6"
+					type="text"
+					class=""
+					default="fa fa-times-circle-o"
+					label="TPL_JOOSTRAP_ICON6_LABEL"
+					description="TPL_JOOSTRAP_ICON6_DESC"
+				/>
+			</fieldset>
+
+			<fieldset name="JOOSTRAP_COLORS" addfieldpath="/templates/posrg/fields">
+				<field
+					name="color1_enabled"
+					type="radio"
+					class="btn-group color-enabler"
+					data-enable="color1_field"
+					default="0"
+					label="TPL_JOOSTRAP_COLOR1_ENABLED_LABEL"
+					description="TPL_JOOSTRAP_COLOR_ENABLED_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="color1_code"
+					type="color"
+					label="TPL_JOOSTRAP_COLOR1_CODE_LABEL"
+					description="TPL_JOOSTRAP_COLOR_CODE_DESC"
+				/>
+				<field
+					name="color1_selector"
+					type="textarea"
+					rows="4"
+					columns="30"
+					label="TPL_JOOSTRAP_COLOR1_SELECTOR_LABEL"
+					description="TPL_JOOSTRAP_COLOR_SELECTOR_DESC"
+				/>
+				<field
+					name="color1_property"
+					type="textarea"
+					rows="4"
+					columns="30"
+					default="color: {color};"
+					label="TPL_JOOSTRAP_COLOR1_PROPERTY_LABEL"
+					description="TPL_JOOSTRAP_COLOR_PROPERTY_DESC"
+				/>
+				<field
+					name="color2_enabled"
+					type="radio"
+					class="btn-group color-enabler"
+					default="0"
+					label="TPL_JOOSTRAP_COLOR2_ENABLED_LABEL"
+					description="TPL_JOOSTRAP_COLOR_ENABLED_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="color2_code"
+					type="color"
+					label="TPL_JOOSTRAP_COLOR2_CODE_LABEL"
+					description="TPL_JOOSTRAP_COLOR_CODE_DESC"
+				/>
+				<field
+					name="color2_selector"
+					type="textarea"
+					rows="4"
+					columns="30"
+					label="TPL_JOOSTRAP_COLOR2_SELECTOR_LABEL"
+					description="TPL_JOOSTRAP_COLOR_SELECTOR_DESC"
+				/>
+				<field
+					name="color2_property"
+					type="textarea"
+					rows="4"
+					columns="30"
+					default="color: {color};"
+					label="TPL_JOOSTRAP_COLOR2_PROPERTY_LABEL"
+					description="TPL_JOOSTRAP_COLOR_PROPERTY_DESC"
+				/>
+				<field
+					name="color3_enabled"
+					type="radio"
+					class="btn-group color-enabler"
+					default="0"
+					label="TPL_JOOSTRAP_COLOR3_ENABLED_LABEL"
+					description="TPL_JOOSTRAP_COLOR_ENABLED_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="color3_code"
+					type="color"
+					label="TPL_JOOSTRAP_COLOR3_CODE_LABEL"
+					description="TPL_JOOSTRAP_COLOR_CODE_DESC"
+				/>
+				<field
+					name="color3_selector"
+					type="textarea"
+					rows="4"
+					columns="30"
+					label="TPL_JOOSTRAP_COLOR3_SELECTOR_LABEL"
+					description="TPL_JOOSTRAP_COLOR_SELECTOR_DESC"
+				/>
+				<field
+					name="color3_property"
+					type="textarea"
+					rows="4"
+					columns="30"
+					default="color: {color};"
+					label="TPL_JOOSTRAP_COLOR1_PROPERTY_LABEL"
+					description="TPL_JOOSTRAP_COLOR_PROPERTY_DESC"
+				/>
+				<field
+					name="color4_enabled"
+					type="radio"
+					class="btn-group color-enabler"
+					default="0"
+					label="TPL_JOOSTRAP_COLOR4_ENABLED_LABEL"
+					description="TPL_JOOSTRAP_COLOR_ENABLED_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="color4_code"
+					type="color"
+					label="TPL_JOOSTRAP_COLOR4_CODE_LABEL"
+					description="TPL_JOOSTRAP_COLOR_CODE_DESC"
+				/>
+				<field
+					name="color4_selector"
+					type="textarea"
+					rows="4"
+					columns="30"
+					label="TPL_JOOSTRAP_COLOR4_SELECTOR_LABEL"
+					description="TPL_JOOSTRAP_COLOR_SELECTOR_DESC"
+				/>
+				<field
+					name="color4_property"
+					type="textarea"
+					rows="4"
+					columns="30"
+					default="color: {color};"
+					label="TPL_JOOSTRAP_COLOR1_PROPERTY_LABEL"
+					description="TPL_JOOSTRAP_COLOR_PROPERTY_DESC"
+				/>
+				<field
+					name="color5_enabled"
+					type="radio"
+					class="btn-group color-enabler"
+					default="0"
+					label="TPL_JOOSTRAP_COLOR5_ENABLED_LABEL"
+					description="TPL_JOOSTRAP_COLOR_ENABLED_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="color5_code"
+					type="color"
+					label="TPL_JOOSTRAP_COLOR5_CODE_LABEL"
+					description="TPL_JOOSTRAP_COLOR_CODE_DESC"
+				/>
+				<field
+					name="color5_selector"
+					type="textarea"
+					rows="4"
+					columns="30"
+					label="TPL_JOOSTRAP_COLOR5_SELECTOR_LABEL"
+					description="TPL_JOOSTRAP_COLOR_SELECTOR_DESC"
+				/>
+				<field
+					name="color5_property"
+					type="textarea"
+					rows="4"
+					columns="30"
+					default="color: {color};"
+					label="TPL_JOOSTRAP_COLOR5_PROPERTY_LABEL"
+					description="TPL_JOOSTRAP_COLOR_PROPERTY_DESC"
+				/>
+			</fieldset>
+			<fieldset name="JOOSTRAP_FONTS">
+				<field
+					name="googleFonts"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="TPL_JOOSTRAP_GFONTS_LABEL"
+					description="TPL_JOOSTRAP_GFONTS_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="googleFontName"
+					type="text"
+					class=""
+					default=""
+					label="TPL_JOOSTRAP_FONT_NAME_LABEL"
+					description="TPL_JOOSTRAP_FONT_NAME_DESC"
+				/>
+				<field
+					name="googleFontSelectors"
+					type="textarea"
+					class=""
+					default=""
+					label="TPL_JOOSTRAP_GFONTS_SELECTORS_LABEL"
+					description="TPL_JOOSTRAP_GFONTS_SELECTORS_DESC"
+					rows="4"
+					columns="30"
+					filter="raw"
+				/>
+				<field
+					name="googleFontsSecond"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="TPL_JOOSTRAP_GFONTS_LABEL"
+					description="TPL_JOOSTRAP_GFONTS_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="googleFontNameSecond"
+					type="text"
+					class=""
+					default=""
+					label="TPL_JOOSTRAP_FONT_NAME_LABEL"
+					description="TPL_JOOSTRAP_FONT_NAME_DESC"
+				/>
+				<field
+					name="googleFontSelectorsSecond"
+					type="textarea"
+					class=""
+					default=""
+					label="TPL_JOOSTRAP_GFONTS_SELECTORS_LABEL"
+					description="TPL_JOOSTRAP_GFONTS_SELECTORS_DESC"
+					rows="4"
+					columns="30"
+					filter="raw"
+				/>
+			</fieldset>
+
+			<fieldset name="JOOSTRAP_MISCELLANEOUS">
+				<field
+					name="setGeneratorTag"
+					type="text"
+					default="Joomla 3.1 - Joostrap 3.0 with Bootstrap 3"
+					label="TPL_JOOSTRAP_CUSTOMIZE_METATAG_OUTPUT_LABEL"
+					description="TPL_JOOSTRAP_CUSTOMIZE_METATAG_OUTPUT_DESC"
+					size="80"
+				/>
+				<field
+					name="frontpageshow"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="TPL_JOOSTRAP_FRONTPAGESHOW_LABEL"
+					description="TPL_JOOSTRAP_FRONTPAGESHOW_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="templateFavicon"
+					class=""
+					type="media"
+					default=""
+					label="TPL_JOOSTRAP_FAVICON_LABEL"
+					description="TPL_JOOSTRAP_FAVICON_DESC"
+				/>
+				<field
+					name="appletouch"
+					type="note"
+					class=""
+					label=""
+					description="TPL_JOOSTRAP_APPLE_TOUCH_DESC"
+				/>
+				<field name="toTop"
+				type="radio" class="btn-group"
+				default="1"
+				label="TPL_JOOSTRAP_TOTOP_LABEL"
+				description="TPL_JOOSTRAP_TOTOP_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="copyrights"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="TPL_JOOSTRAP_COPYRIGHTS_LABEL"
+					description="TPL_JOOSTRAP_COPYRIGHTS_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="copyrightsText"
+					class=""
+					type="textarea"
+					default=""
+					label="TPL_JOOSTRAP_COPYRIGHTS_TEXT_LABEL"
+					rows="4"
+					columns="30"
+					filter="raw"
+				/>
+				<field
+					name="googleAnalitycs"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="TPL_JOOSTRAP_GA_LABEL"
+					description="TPL_JOOSTRAP_GA_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="googleAnalitycsCode"
+					type="text"
+					label="TPL_JOOSTRAP_GA_TCODE_LABEL"
+					description="TPL_JOOSTRAP_GA_TCODE_DESC"
+				/>
+				<field
+					name="fontawesomecss"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="TPL_JOOSTRAP_FONTAWESOMECSS_LABEL"
+					description="TPL_JOOSTRAP_FONTAWESOMECSS_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="loadJquery"
+					type="list"
+					default="1"
+					label="TPL_JOOSTRAP_FIELD_LOAD_JQUERY_LABEL"
+					description="TPL_JOOSTRAP_FIELD_LOAD_JQUERY_DESC"
+					>
+						<option value="0">TPL_JOOSTRAP_LOAD_JQUERY_NOT</option>
+						<option value="1">TPL_JOOSTRAP_LOAD_JQUERY_LOCALLY</option>
+						<option value="2">TPL_JOOSTRAP_LOAD_JQUERY_CDN</option>
+				</field>
+				<field
+					name="loadBootstrap"
+					type="list"
+					default="1"
+					label="TPL_JOOSTRAP_FIELD_LOAD_BOOTSTRAP_LABEL"
+					description="TPL_JOOSTRAP_FIELD_LOAD_BOOTSTRAP_DESC"
+					>
+						<option value="0">TPL_JOOSTRAP_LOAD_BOOTSTRAP_NOT</option>
+						<option value="1">TPL_JOOSTRAP_LOAD_BOOTSTRAP_LOCALLY</option>
+						<option value="2">TPL_JOOSTRAP_LOAD_BOOTSTRAP_CDN</option>
+				</field>
+				<field
+					name="allowCompile"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="TPL_JOOSTRAP_FIELD_ALLOW_LESS_COMPILE_LABEL"
+					description="TPL_JOOSTRAP_FIELD_ALLOW_LESS_COMPILE_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+			</fieldset>
+			<fieldset name="JOOSTRAP_WIREFRAMING">
+			<field
+						name="wireframing"
+						type="radio"
+						class="btn-group"
+						default="0"
+						label="TPL_JOOSTRAP_WIREFRAMING_LABEL"
+						description="TPL_JOOSTRAP_WIREFRAMING_DESC"
+						>
+							<option value="1">JYES</option>
+							<option value="0">JNO</option>
+				</field>
+				<field name="note13" type="note" class="alert alert-success" label="How do I use this option?" description="Set the wireframing option to Yes and Save. This option will give you some extra CSS on the framend, whilst wireframing a client mockup.
+				&lt;br&gt;For dummy place holders or images in your Joomla articles or modules, try using &lt;a href=&quot;http:&#47;&#47;www.dummyimage.com&quot;&gt;www.dummyimage.com&lt;&#47;a&gt;
+				&lt;br&gt;
+				&lt;br&gt;i.e. use an image SRC with:
+				&lt;br&gt;&lt;strong&gt;www.dummyimage.com&#47;600x400&#47;cccccc&#47;ffffff&amp;text=Place+Holder&lt;&#47;strong&gt;
+				&lt;br&gt;
+				&lt;br&gt;The above will give you a place holder image as shown below.
+				&lt;br&gt;
+				&lt;br&gt;&lt;img src=&quot;http:&#47;&#47;dummyimage.com&#47;600x400&#47;cccccc&#47;ffffff&amp;text=Place+Holder&quot;&gt; " />
+			</fieldset>
+
+			<fieldset name="JOOSTRAP_CUSTOMCSS">
+				<field
+					name="customCSS"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="TPL_JOOSTRAP_CUSTOM_CSS_LABEL"
+					description="TPL_JOOSTRAP_CUSTOM_CSS_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field
+					name="customCSScode"
+					class="input-xxlarge code"
+					type="textarea"
+					default=""
+					label="TPL_JOOSTRAP_CUSTOM_CSS_INPUT_LABEL"
+					description=""
+					rows="6"
+					columns="60"
+					filter="raw"
+				/>
+				<field
+					name="jsNote"
+					type="note"
+					class="alert alert-success"
+					label="TPL_JOOSTRAP_CUSTOM_ANALYTICS_LABEL"
+					description="TPL_JOOSTRAP_CUSTOM_ANALYTICS_DESC"
+				/>
+			</fieldset>
+			<fieldset name="JOOSTRAP_SOCIAL">
+				<field name="socialIcons" type="radio" class="btn-group" default="1" label="TPL_JOOSTRAP_SOCIAL_ICONS_LABEL" description="TPL_JOOSTRAP_SOCIAL_ICONS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="linkFacebook" type="text" default="" label="TPL_JOOSTRAP_FACEBOOK_LABEL" description="TPL_JOOSTRAP_FACEBOOK_DESC" filter="raw" />
+				<field name="linkTwitter" type="text" default="" label="TPL_JOOSTRAP_TWITTER_LABEL" description="TPL_JOOSTRAP_TWITTER_DESC" filter="raw" />
+				<field name="linkPinterest" type="text" default="" label="TPL_JOOSTRAP_PINTEREST_LABEL" description="TPL_JOOSTRAP_PINTEREST_DESC" filter="raw" />
+				<field name="linkDribbble" type="text" default="" label="TPL_JOOSTRAP_DRIBBBLE_LABEL" description="TPL_JOOSTRAP_DRIBBBLE_DESC" filter="raw" />
+				<field name="linkLinkedIn" type="text" default="" label="TPL_JOOSTRAP_LINKEDIN_LABEL" description="TPL_JOOSTRAP_LINKEDIN_DESC" filter="raw" />
+				<field name="linkFlickr" type="text" default="" label="TPL_JOOSTRAP_FLICKR_LABEL" description="TPL_JOOSTRAP_FLICKR_DESC" filter="raw" />
+				<field name="linkYoutube" type="text" default="" label="TPL_JOOSTRAP_YOUTUBE_LABEL" description="TPL_JOOSTRAP_YOUTUBE_DESC" filter="raw" />
+				<field name="linkVimeo" type="text" default="" label="TPL_JOOSTRAP_VIMEO_LABEL" description="TPL_JOOSTRAP_VIMEO_DESC" filter="raw" />
+				<field name="linkGooglePlus" type="text" default="" label="TPL_JOOSTRAP_GOOGLE_PLUS_LABEL" description="TPL_JOOSTRAP_GOOGLE_PLUS_DESC" filter="raw" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

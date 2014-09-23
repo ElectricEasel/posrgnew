@@ -1,0 +1,376 @@
+.accordion-body.collapse {
+	overflow: hidden;
+}
+
+.control-group span.disabled {
+	opacity: 1;
+}
+
+a:hover,
+a:active,
+a:focus {
+	outline:none !important;
+}
+
+.control-label span.spacer span label {
+	display:none;
+}
+
+#templatestyleOptions textarea.code {
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+	color:#222;
+	padding: 12px;
+	line-height:1.3em;
+	border-bottom:1px solid #e2e2e2;
+	margin-bottom:24px;
+	display: block;
+	margin: 0 0 9px;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+}
+
+#templatestyleOptions .accordion-inner textarea,
+#templatestyleOptions .accordion-inner input {
+	background: #fff;
+	border: 0;
+	border: 1px solid #d9d9d9;
+	padding: 9px;
+	font-size:12px;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+			box-shadow: none;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+			border-radius: 0;
+
+}
+
+#templatestyleOptions .accordion-inner select {
+	border: 1px solid #d9d9d9;
+	width: 230px;
+	height: 39px;
+	padding: 9px;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+			border-radius: 0;
+}
+
+#templatestyleOptions .accordion-inner textarea:hover,
+#templatestyleOptions .accordion-inner input:hover,
+#templatestyleOptions .accordion-inner select:hover {
+	border-color: rgb(180,180,180);
+}
+
+#templatestyleOptions .accordion-inner textarea:focus,
+#templatestyleOptions .accordion-inner input:focus,
+#templatestyleOptions .accordion-inner select:focus {
+	outline:0;
+	border-color: rgba(82, 168, 236, 0.8);
+	-webkit-box-shadow:  0px 0px 2px 0px rgba(82, 168, 236, 0.8);
+			box-shadow:  0px 0px 2px 0px rgba(82, 168, 236, 0.8);
+	outline: thin dotted \9;
+
+}
+
+#templatestyleOptions .input-prepend.input-append .add-on,
+#templatestyleOptions .input-prepend.input-append .btn {
+	padding: 9px;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+			border-radius: 0;
+}
+
+#templatestyleOptions .accordion-group {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #ccc;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+			border-radius: 0;
+}
+
+#templatestyleOptions .accordion-heading {
+	background: rgb(254,254,254); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(254,254,254,1) 0%, rgba(245,245,245,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,254,254,1)), color-stop(100%,rgba(245,245,245,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(254,254,254,1) 0%,rgba(245,245,245,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(254,254,254,1) 0%,rgba(245,245,245,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(254,254,254,1) 0%,rgba(245,245,245,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(254,254,254,1) 0%,rgba(245,245,245,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+	padding: 6px;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+			border-radius: 0;
+}
+
+#templatestyleOptions .accordion-heading a.accordion-toggle {
+	color: #333;
+	font-size: 12px
+}
+
+#templatestyleOptions .accordion-heading a.accordion-toggle:active,
+#templatestyleOptions .accordion-heading a.accordion-toggle:hover,
+#templatestyleOptions .accordion-heading a.accordion-toggle:focus {
+	color: #000;
+	text-decoration: none;
+}
+
+#templatestyleOptions .accordion-heading a.accordion-toggle:focus {
+	color:#000;
+}
+
+
+#templatestyleOptions .control-group {
+	padding: 6px 0;
+	margin-bottom: 0px;
+	border-bottom: 0px solid #f5f5f5;
+}
+
+.accordion-inner .control-label label {
+	font-size: 12px;
+	padding:6px 0 0 15px;
+}
+
+#templatestyleOptions #collapse0 .accordion-inner {
+	padding:0 25px 30px 25px;
+}
+
+#templatestyleOptions .accordion-inner {
+	background: #fff;
+	padding:25px;
+}
+
+#templatestyleOptions  .minicolors {
+	padding-left: 30px;
+}
+
+#templatestyleOptions  .minicolors-input {
+	padding-right: 5px !important;
+}
+
+.moor-box {
+	margin-top: 3px !important;
+	width: 420px !important;
+	height: 200px !important;
+	background-color: #333 !important;
+	border: 2px solid #555 !important;
+}
+
+.moor-overlayBox {
+	width: 180px !important; /* Width and Height of the overlay must be setted here: default 256x256 */
+	height: 180px !important;
+	margin-top: 9px !important;
+	margin-left: 9px !important;
+	border: 1px solid #444 !important;
+}
+
+.moor-slider {
+	border: 1px solid #444 !important;
+	margin-top: 9px !important;
+	margin-left: 200px !important;
+	width: 23px !important; /* if you want a bigger or smaller slider... */
+	height: 180px !important;
+}
+
+.moor-colorBox {
+	border: 1px solid #000 !important;
+	width: 59px !important;
+	height: 68px !important;
+	margin-top: 20px !important;
+	margin-left: 215px !important;
+}
+
+.moor-chooseColor { /* Top Box Color, the choosen one */
+	margin-top: 10px !important;
+	margin-left: 250px !important;
+	width: 67px !important;
+	height: 36px !important;
+	border: 2px solid #444 !important;
+}
+
+.moor-currentColor { /* Bottom Box Color, the backup one */
+	margin-top: 10px !important;
+	margin-left: 330px !important;
+	width: 67px !important;
+	height: 36px !important;
+	border: 2px solid #444 !important;
+	visibility:visible !important;
+}
+
+.moor-okButton {
+	font-family: Arial, FreeSans, sans-serif !important;
+	font-weight: normal !important;
+	font-size: 11px !important;
+	color:#e5e5e5 !important;
+	margin-top: 160px !important;
+	margin-left: 335px !important;
+	height: 30px !important;
+	padding: 0 15px !important;
+	border-top: 1px solid #555 !important;
+	border-left: 1px solid #303030 !important;
+	border-right: 1px solid #303030 !important;
+	border-bottom: 1px solid #181818 !important;
+	background: #444444 !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  #444444 0%, #222222 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(100%,#222222)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #444444 0%,#222222 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #444444 0%,#222222 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #444444 0%,#222222 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom,  #444444 0%,#222222 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#222222',GradientType=0 ) !important; /* IE6-9 */
+	-webkit-border-radius: 4px !important;
+	   -moz-border-radius: 4px !important;
+			border-radius: 4px !important;
+}
+
+.moor-okButton:hover,
+.moor-okButton:focus,
+.moor-okButton:active {
+	color: #ffffff !important;
+	background: #555555 !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  #555555 0%, #333333 100%)!important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#333333))!important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #555555 0%,#333333 100%)!important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #555555 0%,#333333 100%)!important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #555555 0%,#333333 100%)!important; /* IE10+ */
+	background: linear-gradient(to bottom,  #555555 0%,#333333 100%)!important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#333333',GradientType=0 )!important; /* IE6-9 */
+
+}
+
+.moor-rLabel {
+	margin-top: 60px !important;
+	margin-left: 250px !important;
+	visibility: visible !important;
+}
+
+.moor-gLabel {
+	margin-top: 87px !important;
+	margin-left: 249px !important;
+	visibility: visible !important;
+}
+
+.moor-bLabel {
+	margin-top: 114px !important;
+	margin-left: 250px !important;
+	visibility: visible !important;
+}
+
+.moor-HueLabel {
+	margin-top: 60px !important;
+	margin-left: 330px !important;
+	visibility: visible !important;
+}
+
+span.moor-ballino { /* Style hue ° (degree) !! */
+	margin-top: 60px !important;
+	margin-left: 402px !important;
+	visibility: visible !important;
+}
+
+.moor-SatuLabel {
+	margin-top: 87px !important;
+	margin-left: 330px !important;
+	visibility: visible !important;
+}
+
+.moor-BrighLabel {
+	margin-top: 114px !important;
+	margin-left: 330px !important;
+	visibility: visible !important;
+}
+
+.moor-hexLabel {
+	margin-top: 160px !important;
+	margin-left: 250px !important;
+	visibility: visible !important;
+}
+
+.moor-cursor {
+	width: 12px;
+	height: 12px;
+}
+
+.moor-arrows {
+	background-image: url(moor_arrows.gif);
+	visibility: visible !important;
+	top: 9px ;
+	left: 192px !important;
+	width: 41px !important;
+	height: 9px !important;
+	line-height: 9px;
+	font-size:0px;
+}
+
+.moor-rLabel,
+.moor-gLabel,
+.moor-bLabel,
+.moor-HueLabel,
+span.moor-ballino,
+.moor-SatuLabel,
+.moor-BrighLabel {
+	font-size: 11px;
+	text-shadow: #111 1px 1px 0;
+	color: #bbb;
+}
+
+.moor-rInput,
+.moor-gInput,
+.moor-bInput,
+.moor-HueInput,
+.moor-SatuInput,
+.moor-BrighInput {
+	width: 40px!important;
+	visibility: visible !important;
+	background: #151515 !important;
+	color: #bbb !important;
+	border-top: 1px solid #383838 !important;
+	border-left: 1px solid #404040 !important;
+	border-right: 1px solid #404040 !important;
+	border-bottom: 1px solid #494949 !important;
+	line-height: 14px;
+	padding: 4px 6px;
+	font-size: 11px;
+	-webkit-transition: all 200ms ease-out;
+	   -moz-transition: all 200ms ease-out;
+        -ms-transition: all 200ms ease-out;
+         -o-transition: all 200ms ease-out;
+		    transition: all 200ms ease-out;
+	-webkit-box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+	   -moz-box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+	    -ms-box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+	     -o-box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+			box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+}
+
+.moor-hexInput {
+	font-family: Arial, Helvetica, Serif !important;
+	height: 30px !important;
+	line-height: 30px !important;
+	width: 60px !important;
+	padding: 0px 10px !important;
+	border: 0px solid #444 !important;
+	background: #101010 !important;
+	color: #eee !important;
+	font-size: 12px !important;
+	text-align: center !important;
+	-webkit-box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+	   -moz-box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+	    -ms-box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+	     -o-box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+			box-shadow: inset 0px 4px 4px 2px rgba(10, 10, 10, 0.5);
+
+}
+
+.moor-rInput:focus,
+.moor-gInput:focus,
+.moor-bInput:focus,
+.moor-HueInput:focus,
+.moor-SatuInput:focus,
+.moor-BrighInput:focus,
+.moor-hexInput:focus {
+	color: #fff!important;
+	background: #000 !important;
+}
