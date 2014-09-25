@@ -134,6 +134,8 @@ $active         = JFactory::getApplication()->getMenu()->getActive();
 $menuname       = $active->title;
 $parentId       = $active->tree[0];
 $parentName     = $menu->getItem($parentId)->alias;
+$params			= $menu->getParams($active->id);
+$pageclass 		= $params->get( 'pageclass_sfx' );
 
 if(JFactory::getUser()->guest) {
 $loggedin = 'loggedout';

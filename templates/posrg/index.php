@@ -64,7 +64,7 @@ require_once __DIR__ . '/functions/tpl-init.php';
 			   <?php include_once('templates/' . $this->template . '/js/analytics-head.js'); ?>
 		<?php endif; ?>
 	</head>
-    <body class="<?php echo $bodyclass. " " .$parentName. " " .$active->alias. " " .$option. " view-" .$view. " " .$frontpage. " itemid-" .$itemid. " " .$loggedin. " " .$rtl_detection; ?>">	<div class="body-wrapper" id="page">
+    <body class="<?php echo $bodyclass. " " .$parentName. " " .$active->alias. " " .$option. " view-" .$view. " " .$frontpage. " itemid-" .$itemid. " " .$loggedin. " " .$rtl_detection. " " .$pageclass; ?>">	<div class="body-wrapper" id="page">
 		<header id="header">
 			<div class="container">
 				<div id="top-toolbar" class="pull-right">
@@ -75,7 +75,7 @@ require_once __DIR__ . '/functions/tpl-init.php';
 					</div>
 				</div>
 
-				<div class="logo pull-left">
+				<div class="pull-left">
 					<a href="/" class="logo logo-header"></a>
 				</div>
 				<a href="#sidebar">
@@ -103,10 +103,10 @@ require_once __DIR__ . '/functions/tpl-init.php';
 			</div>
 		</div>
 	<?php endif; ?>
-	<?php if ($this->countModules('header')): ?>
-		<div id="top" class="clearfix">
+	<?php if ($this->countModules('banner')): ?>
+		<div id="banner" class="clearfix">
 			<div class="container">
-				<jdoc:include type="modules" name="header" style="standard" />
+				<jdoc:include type="modules" name="banner" style="standard" />
 			</div>
 		</div>
 	<?php endif; ?>
@@ -125,18 +125,11 @@ require_once __DIR__ . '/functions/tpl-init.php';
 		</div>
 	<?php endif; ?>
 		<!-- Mainbody -->
-		<div id="mainbody" class="clearfix">
+		<div id="mainbody" class="clearfix <?php echo ($frontpage ? "homepage" : "interior"); ?>">
 			<div class="container">
 				<div class="row">
-				<?php if ($this->countModules('left')): ?>
-					<div class="sidebar-left col-md-<?php echo $left; ?>">
-						<div class="sidebar-nav">
-							<jdoc:include type="modules" name="left" style="standard" />
-						</div>
-					</div>
-				<?php endif; ?>
 					<!-- Content Block -->
-					<div id="content" class="col-md-<?php echo $span;?>">
+					<div id="content" class="col-sm-<?php echo $span;?> pull-right">
 						<div id="message-component">
 							<jdoc:include type="message" />
 						</div>
@@ -174,6 +167,13 @@ require_once __DIR__ . '/functions/tpl-init.php';
 						</div>
 					<?php endif; ?>
 					</div>
+					<?php if ($this->countModules('left')): ?>
+					<div class="sidebar-left col-sm-<?php echo $left;?> pull-left">
+						<div class="sidebar-nav">
+							<jdoc:include type="modules" name="left" style="standard" />
+						</div>
+					</div>
+					<?php endif; ?>
 					<?php if ($this->countModules('right')) : ?>
 					<aside class="sidebar-right col-md-<?php echo $right; ?>">
 						<jdoc:include type="modules" name="right" style="standard" />

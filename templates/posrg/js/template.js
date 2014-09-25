@@ -28,6 +28,6 @@ jQuery(document).ready(function($){
 	
 	}
 	
-	$('body.home #below-content .module').matchHeight();
+	$('body.home #below-content .module, .service-box').matchHeight();
 	
 });
