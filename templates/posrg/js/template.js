@@ -29,5 +29,7 @@ jQuery(document).ready(function($){
 	}
 	
 	$('body.home #below-content .module, .service-box').matchHeight();
+
+    $('.navbar-nav .dropdown-toggle').removeAttr('data-toggle');
 	
 });
