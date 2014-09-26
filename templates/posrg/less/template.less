@@ -154,6 +154,10 @@ h4 {
 				}
 			}
 		}
+        li.current > a,
+        li.active > a {
+            background-color: @nav-link-hover-bg;
+        }
 	}
 }
 #slider,
@@ -271,6 +275,28 @@ h4 {
 	.module-content {
 		border-bottom: 1px solid #bfbfbf;
 	}
+    li.deeper {
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e6e6e6;
+
+        > a {
+            border-bottom: none;
+        }
+        ul {
+            padding: 0;
+            margin-left: 15px;
+            list-style: disc outside;
+            color: @brand-primary;
+
+            li {
+                padding: 2px 0 4px 0;
+
+                a {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
 }
 .module-productinfo {
 	img {
@@ -533,6 +559,18 @@ h4 {
         text-transform: uppercase;
         margin-top: 20px;
     }
+    ul {
+        margin: 0 0 15px 20px;
+        padding: 0;
+        line-height: 20px;
+        list-style: none;
+
+        li {
+            padding: 5px 10px;
+            background: url(/templates/posrg/images/li-blue.png) no-repeat left 8px scroll transparent;
+            line-height: 1.2em;
+        }
+    }
     @media (min-width:@screen-sm-min) {
         float: right;
     }
@@ -541,5 +579,17 @@ h4 {
     .make-sm-column(7);
     @media (min-width:@screen-sm-min) {
         padding-left: 0;
+    }
+}
+.contact_card {
+    padding: 20px 5px 20px 80px;
+    background: url(/templates/posrg/images/contact-card.png) 14px 10px no-repeat @gray-lightest;
+    margin: 0 auto 20px;
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 8px;
+
+    @media (min-width:@screen-md-min) {
+        width: 310px;
     }
 }
