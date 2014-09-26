@@ -12,6 +12,11 @@ function modChrome_basic($module, &$params, &$attribs)
 // Standard
 function modChrome_standard($module, &$params, &$attribs)
 {
+    if ($module->title == 'Sidebar Menu')
+    {
+        $module->title = getSidebarMenuTitle();
+    }
+
 	$moduleTag      = $params->get('module_tag', 'div');
 	$headerTag      = htmlspecialchars($params->get('header_tag', 'h3'));
 	
@@ -176,4 +181,16 @@ function modChrome_joostrap_style($module, $params, $attribs)
 	}
 }
 
-?>
+function getSidebarMenuTitle() {
+    $app =JFactory::getApplication();
+    $menu = $app->getMenu();
+    $active = $menu->getActive();
+    $parent = $menu->getItem($active->parent_id);
+
+    while($parent->parent_id != 1)
+    {
+        $parent = $menu->getItem($parent->parent_id);
+    }
+
+    return $parent->title;
+}
