@@ -1,20 +1,66 @@
 @import "bootstrap/bootstrap.less";
 @import "variables.less";
 
+.hide-mobile {
+    @media (max-width:@screen-xs-max) {
+        display: none;
+    }
+}
+.hide-desktop {
+    @media (min-width:@screen-sm-min) {
+        display: none;
+    }
+}
+.hide-tablet {
+    @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+        display: none;
+    }
+}
+.hide-desktop-only {
+    @media (min-width:@screen-md-min) {
+        display: none;
+    }
+}
+.hide-mobile-small {
+    @media (max-width:@screen-xs) {
+        display: none;
+    }
+}
+
 .body-bg {
-	background: url(../images/bg-body.png) repeat 0 0 #f4f4f4;
+	background: url(../images/bg-body.png) repeat 0 0 @gray-lightest;
 }
 
 body {
-	.body-bg();
-	border-top: 5px solid #000;
+    .body-bg();
+    border-top: 5px solid #000;
 }
 body .container {
-	max-width: 990px;
-	padding:0 20px;
+    max-width: 990px;
+    padding:0 20px;
 }
+h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: @brand-primary;
+}
+h3 {
+    font-weight: normal;
+    color: @brand-primary;
+    margin: 12px 0;
+    line-height: 1.2em;
+    font-size: 13px;
+}
+h4 {
+    font-weight: normal;
+    color: @brand-primary;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
 #mainbody > .container > .row {
-	margin-left: -20px;
+    margin-left: -20px;
 	margin-right: -20px;
 }
 .logo {
@@ -27,7 +73,7 @@ body .container {
 	margin: 20px 0 12px !important;
 }
 #header {
-	background: #f4f4f4;
+	background: @gray-lightest;
 	
 	.links {
 		margin: 5px 0 0;
@@ -150,7 +196,7 @@ body .container {
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: 100% 0;
-	background-color: #f2f2f2;
+	background-color: @gray-lightest;
 	
 	@media (max-width: @screen-md) {
 		background-position: 50% 0;
@@ -216,7 +262,7 @@ body .container {
 			padding: 3px 15px;
 		}
 		.module-content {
-			background: #f2f2f2;
+			background: @gray-lightest;
 		}
 		a.btn {
 			padding:0px 20px;
@@ -276,9 +322,12 @@ body .container {
 	}
 }
 .sidebar-menu {
-	background: #f2f2f2;
+	background: @gray-lightest;
 	
 	h4 {
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: none;
 		margin: 0;
 		.body-bg();
 		padding: 15px;
@@ -313,12 +362,6 @@ body .container {
 		margin: 0;
 		padding: 0;
 		border: medium none;
-		
-		h2 {
-			margin: 10px 0;
-			font-size: 24px;
-			color: @brand-primary;
-		}
 	}
 }
 .article-image {
@@ -327,6 +370,7 @@ body .container {
 	margin: 0 0 25px 25px;
 	padding: 10px;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+    max-width: 100%;
 }
 #footer {
 	background: url(../images/bg-footer.png) repeat-x 0 0 #004173;
@@ -344,6 +388,9 @@ body .container {
 		font-weight: normal;
 		box-shadow: 0px 1px 0px rgba(0,0,0,0.55),
 					0px 2px 0px rgba(255,255,255,0.3);
+        color: @white;
+        margin: 15px 0;
+        padding: 0 0 5px;
 	}
 	a {
 		color: #fff;
@@ -422,6 +469,7 @@ body .container {
 		font-size: 16px;
 		padding: 15px;
 		border-bottom: 5px solid @brand-primary;
+        font-weight: bold;
 	}
 	.module-ebay img {
 		margin: -6px 0 0 0;
@@ -460,10 +508,6 @@ body .container {
 	h4 {
 		.body-bg();
 		padding: 10px 20px;
-		color: @brand-primary;
-		font-size: 13px;
-		text-transform: uppercase;
-		margin: 0;
 		border-top: 8px solid #006ab8;
 	}
 	ul {
@@ -482,4 +526,20 @@ body .container {
 			line-height: 1.2em;
 		}
 	}
+}
+.market_side {
+    .make-sm-column(5);
+    h3 {
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+    @media (min-width:@screen-sm-min) {
+        float: right;
+    }
+}
+.market_content {
+    .make-sm-column(7);
+    @media (min-width:@screen-sm-min) {
+        padding-left: 0;
+    }
 }
