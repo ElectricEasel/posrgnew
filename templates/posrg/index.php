@@ -8,6 +8,7 @@
  */
 defined('_JEXEC') or die;
 require_once __DIR__ . '/functions/tpl-init.php';
+unset($this->_styleSheets[JURI::root(true).'/components/com_rsform/assets/css/front.css']);
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]>
