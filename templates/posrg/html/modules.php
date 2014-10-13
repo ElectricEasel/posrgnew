@@ -185,7 +185,7 @@ function getSidebarMenuTitle() {
     $app =JFactory::getApplication();
     $menu = $app->getMenu();
     $parent = $menu->getActive();
-    
+    
     while($parent->parent_id != 1)
     {
         $parent = $menu->getItem($parent->parent_id);
