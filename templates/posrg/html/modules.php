@@ -184,9 +184,8 @@ function modChrome_joostrap_style($module, $params, $attribs)
 function getSidebarMenuTitle() {
     $app =JFactory::getApplication();
     $menu = $app->getMenu();
-    $active = $menu->getActive();
-    $parent = $menu->getItem($active->parent_id);
-
+    $parent = $menu->getActive();
+    
     while($parent->parent_id != 1)
     {
         $parent = $menu->getItem($parent->parent_id);
