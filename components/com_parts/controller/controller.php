@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class PartsController extends JController
+class PartsController extends JControllerLegacy
 {
 	protected $app;
 

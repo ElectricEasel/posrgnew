@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class ProductViewBuy extends JView
+class ProductViewBuy extends JViewLegacy
 {
 	public function display($tpl = null)
 	{
