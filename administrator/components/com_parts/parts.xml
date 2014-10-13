@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>parts</name>
+	<creationDate>2013</creationDate>
+	<author>Don Gilbert</author>
+	<version>2.0</version>
+
+	<administration>
+		<menu>Parts</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>parts.php</filename>
+		</files>
+	</administration>
+
+	<files folder="site">
+		<filename>parts.php</filename>
+		<folder>assets</folder>
+		<folder>controller</folder>
+		<folder>lib</folder>
+		<folder>model</folder>
+		<folder>table</folder>
+		<folder>views</folder>
+	</files>
+
+</extension>
