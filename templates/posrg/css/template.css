@@ -7204,3 +7204,115 @@ fieldset[disabled] #services-form #submit.active {
 #services-form .rsform-block-antispam {
   display: none;
 }
+ul#featuredlist {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+ul#featuredlist li {
+  padding: 25px 0 0;
+  margin: 0 0 25px;
+  border-top: 1px solid #eee;
+  background: none;
+}
+ul#featuredlist li:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+ul#featuredlist li .frame {
+  border: 2px solid #e6e6e6;
+  background: #fff;
+  padding: 7px;
+  box-sizing: border-box;
+  width: 200px;
+  height: 185px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px 20px 0;
+}
+ul#featuredlist li .featuredcontent {
+  display: inline-block;
+  width: 477px;
+  height: 185px;
+  vertical-align: top;
+}
+ul#featuredlist li .featuredcontent h5 {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0 0 14px;
+}
+ul#featuredlist li .featuredcontent p {
+  font-size: 13px;
+  line-height: 1em;
+  margin: 12px 0 0;
+}
+ul#featuredlist li .featuredcontent p span {
+  color: #2073cd;
+}
+ul#featuredlist li .featuredcontent p.indent {
+  margin-top: 5px;
+  text-indent: 91px;
+}
+ul#featuredlist li .featuredcontent table {
+  background: #f7f7f7;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 25px;
+}
+ul#featuredlist li .featuredcontent table td,
+ul#featuredlist li .featuredcontent table th {
+  border: 1px solid #e4e4e4;
+  font-size: 10px;
+  padding: 0 5px;
+  height: 33px;
+  box-sizing: border-box;
+}
+ul#featuredlist li .featuredcontent table th {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+ul#featuredlist li .featuredcontent table thead {
+  background: #1069c9;
+}
+ul#featuredlist li h6 {
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #2073cd;
+  margin: 14px 0;
+}
+ul#featuredlist li a.button {
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1em;
+  font-weight: bold;
+  text-transform: lowercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  padding: 5px 26px;
+  border-radius: 6px;
+}
+ul#featuredlist li a.button:hover {
+  text-decoration: none;
+}
+ul#featuredlist li a.button.button-blue {
+  background: #0f66cb;
+  margin-right: 7px;
+}
+ul#featuredlist li a.button.button-blue:hover {
+  background: #007cf8;
+}
+ul#featuredlist li a.button.button-gray {
+  background: #646464;
+}
+ul#featuredlist li a.button.button-gray:hover {
+  background: #8A8A8A;
+}
