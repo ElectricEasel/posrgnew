@@ -12,8 +12,7 @@ jimport('joomla.utilities.date');
 jimport('joomla.filesystem.file');
 
 JFactory::getDocument()
-	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
-	->addStyleSheet('/components/com_parts/assets/css/style.css');
+	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
 
 JLoader::registerPrefix('Parts', dirname(__FILE__));
 JLoader::register('Quick_CSV_Import', dirname(__FILE__) . '/lib/Quick_CSV_Import.php');
