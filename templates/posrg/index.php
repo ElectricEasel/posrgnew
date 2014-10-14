@@ -38,6 +38,7 @@ unset($this->_styleSheets[JURI::root(true).'/components/com_rsform/assets/css/fr
 	    <![endif]-->
 		<script src="<?php echo $tplUrl; ?>/js/modernizr.custom.js" type="text/javascript"></script>
 		<script src="<?php echo $tplUrl; ?>/js/jquery.matchHeight.min.js" type="text/javascript"></script>
+        <script src="<?php echo $tplUrl; ?>/js/chosen/chosen.jquery.min.js" type="text/javascript"></script>
 		<script src="<?php echo $tplUrl; ?>/js/template.js" type="text/javascript"></script>
 		<script src="<?php echo $tplUrl; ?>/js/j-backbone.js" type="text/javascript"></script>
 		<!-- Place apple-touch-icon(s) in the site root directory -->
@@ -50,6 +51,7 @@ unset($this->_styleSheets[JURI::root(true).'/components/com_rsform/assets/css/fr
 			<link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/css/font-awesome.min.css'); ?>">
 		<?php endif; ?>
 		<link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/css/animate.css'); ?>" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/js/chosen/chosen.css'); ?>" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/css/template.css'); ?>" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/css/j-backbone.css'); ?>" type="text/css" media="screen" />
 		<jdoc:include type="head" />

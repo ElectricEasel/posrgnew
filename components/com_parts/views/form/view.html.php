@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class PartsViewForm extends JView
+class PartsViewForm extends JViewLegacy
 {
 	protected $item;
 

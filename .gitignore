@@ -15,3 +15,4 @@ logs/*
 /maintenance/
 /tmp/*
 /uploads/*
+components/com_product/assets/upload/*

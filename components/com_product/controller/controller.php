@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class ProductController extends JController
+class ProductController extends JControllerLegacy
 {
 	protected $app;
 
@@ -31,6 +31,10 @@ class ProductController extends JController
 	{
 		$view = $this->app->input->get('view');
 
+        if (!isset($task))
+        {
+            $task = '';
+        }
 		if (!$task && !$view)
 		{
 			JRequest::setVar('view', 'list');

@@ -27,8 +27,8 @@ $resetUrl = JRoute::_('index.php?option=com_parts&view=list');
 							<input type="text" class="" name="keyword" id="keyword" value="<?php echo $this->state->get('filter.keyword'); ?>" />
 						</td>
 						<td>
-							<input type="submit" value="" class="seachbutton" style="background:url(/components/com_parts/assets/images/search.png);width:95px;height:33px;cursor:pointer" />&nbsp;
-							<input type="submit" value="" class="seachbutton" onclick="document.location.href='<?php echo $resetUrl; ?>'; return false;" style="background:url(/components/com_parts/assets/images/reset.png);width:95px;height:33px;cursor:pointer" />
+							<input type="submit" value="Search" class="searchbutton" />&nbsp;
+							<input type="submit" value="View All" class="searchbutton" onclick="document.location.href='<?php echo $resetUrl; ?>'; return false;" />
 						</td>
 					</tr>
 				</tbody>

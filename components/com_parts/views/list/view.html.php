@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class PartsViewList extends JView
+class PartsViewList extends JViewLegacy
 {
 	public function display($tpl = null)
 	{

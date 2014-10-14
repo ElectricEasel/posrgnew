@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class ProductViewList extends JView
+class ProductViewList extends JViewLegacy
 {
 	function getThumb($image_path, $h, $w = 0)
 	{

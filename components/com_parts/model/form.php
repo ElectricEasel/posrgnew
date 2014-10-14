@@ -22,6 +22,10 @@ class PartsModelForm extends JModelItem
 		if (is_null($this->_item))
 		{
 			$id = $this->getState('item.id');
+            if ($id === null)
+            {
+                return new stdClass;
+            }
 
 			$db = $this->getDbo();
 			$query = $db->getQuery(true)
