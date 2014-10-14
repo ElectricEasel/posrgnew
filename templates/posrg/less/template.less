@@ -413,7 +413,8 @@ h4 {
 	.module {
 		.make-sm-column(4);
 	}
-	h3 {
+	h3,
+	h4 {
 		font-size: 18px;
 		font-weight: normal;
 		box-shadow: 0px 1px 0px rgba(0,0,0,0.55),
@@ -424,6 +425,14 @@ h4 {
 	}
 	a {
 		color: #fff;
+	}
+	.module.fb-box {
+		h4 {
+			text-transform: none;
+		}
+	}
+	.fb-like-box {
+		background: white;
 	}
 }
 .home .inventory-search {
@@ -597,6 +606,11 @@ h4 {
         width: 310px;
     }
 }
+/* Facebook like box "sponsor" div */
+.Sponsor {
+	display: none !important;
+}
+
 input[type="text"],
 input[type="tel"],
 input[type="date"],
