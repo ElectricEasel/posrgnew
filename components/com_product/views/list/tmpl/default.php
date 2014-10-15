@@ -22,32 +22,28 @@ $i		= 0;
 
 			$action	= JUri::base() . 'templates/family/images/btn_view_profile.png';
 			?>
-	<div class="gm-box-r">
-		<div class="gm-box-t">
-			<div class="gm-box-b">
-				<div class="gm-item">
-					<a href="<?php echo $lightbox; ?>" class="fancybox gm-enlarge">
-						<?php echo JText::_('GM_PRODUCT_LIGHTBOX')?>
+    <div class="gm-box">
+        <div class="gm-item">
+            <a href="<?php echo $lightbox; ?>" class="fancybox gm-enlarge">
+                <?php echo JText::_('GM_PRODUCT_LIGHTBOX')?>
 
-					</a>
-					<div class="gm-image-container size-med">
-						<a href="<?php echo $lightbox; ?>" class="fancybox" title="">
-							<img src="<?php echo $img ?>" class="gm-image-size size-med" alt="<?php echo $item->product_name ?>" />
-						</a>
-					</div>
-					<div>
-						<h4 class="gm-name gm-ptitle"><?php echo $item->product_name ?></h4>
-						<div class="gm-description"><?php echo $item->product_des ?></div>
-						<div>Price: <span class="gm-price">$<?php echo number_format($item->price, 2) ?></span></div>
-						<a href="<?php echo $buyUrl; ?>" title="<?php echo $item->product_name; ?>" class="buynow">
-							<?php echo JText::_('Buy Now') ?>
+            </a>
+            <div class="gm-image-container size-med">
+                <a href="<?php echo $lightbox; ?>" class="fancybox" title="">
+                    <img src="<?php echo $img ?>" class="gm-image-size size-med" alt="<?php echo $item->product_name ?>" />
+                </a>
+            </div>
+            <div>
+                <h4 class="gm-name gm-ptitle"><?php echo $item->product_name ?></h4>
+                <div class="gm-description"><?php echo $item->product_des ?></div>
+                <div>Price: <span class="gm-price">$<?php echo number_format($item->price, 2) ?></span></div>
+                <a href="<?php echo $buyUrl; ?>" title="<?php echo $item->product_name; ?>" class="buynow">
+                    <?php echo JText::_('Buy Now') ?>
 
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                </a>
+            </div>
+        </div>
+    </div>
 	<?php
 		$i++;
 		if($i%3 == 0) echo '<div class="clear"></div>';

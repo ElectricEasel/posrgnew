@@ -11,28 +11,19 @@ $resetUrl = JRoute::_('index.php?option=com_parts&view=list');
 <div class="contentpaneopen">
 	<div class="contentpane">
 		<form name="adminform" id="adminform" action="<?php echo JRoute::_('index.php?option=com_parts&view=list'); ?>" method="get">
-			<table class="gm-search" cellpadding="0" cellspacing="0">
-				<thead>
-					<tr>
-						<th class="nopad"><?php echo JText::_('MANUFACTURER') ?></th>
-						<th><?php echo JText::_('KEYWORD') ?></th>
-						<th>&nbsp;</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="nopad"><?php echo $this->mfcSelectList ?></td>
-						<td>
-							<input type="hidden" class="" name="part_number" id="part_number" placeholder="Part # or Keword" />
-							<input type="text" class="" name="keyword" id="keyword" value="<?php echo $this->state->get('filter.keyword'); ?>" />
-						</td>
-						<td>
-							<input type="submit" value="Search" class="searchbutton" />&nbsp;
-							<input type="submit" value="View All" class="searchbutton" onclick="document.location.href='<?php echo $resetUrl; ?>'; return false;" />
-						</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="field">
+                <span><?php echo JText::_('MANUFACTURER') ?></span>
+                <?php echo $this->mfcSelectList ?>
+			</div>
+            <div class="field">
+                <span><?php echo JText::_('KEYWORD') ?></span>
+                <input type="hidden" class="" name="part_number" id="part_number" placeholder="Part # or Keword" />
+                <input type="text" class="" name="keyword" id="keyword" value="<?php echo $this->state->get('filter.keyword'); ?>" />
+            </div>
+            <div class="field">
+                <input type="submit" value="Search" class="btn btn-primary" />&nbsp;
+                <input type="submit" value="View All" class="btn btn-primary" onclick="document.location.href='<?php echo $resetUrl; ?>'; return false;" />
+            </div>
 		</form>
 		<script type="text/javascript">
 		// <![CDATA[
@@ -50,12 +41,12 @@ $resetUrl = JRoute::_('index.php?option=com_parts&view=list');
 		<table id="gm-table-part-list" class="intro" width="704px" cellpadding="5" cellspacing="0" border="0">
 			<thead>
 				<tr>
-					<td nowrap="nowrap" width="70px" class="sectiontableheader"><?php echo JText::_('BRAND') ?></td>
-					<td nowrap="nowrap" width="190px" class="sectiontableheader"><?php echo JText::_('PART NUMBER') ?></td>
-					<td nowrap="nowrap" width="260px" class="sectiontableheader"><?php echo JText::_('DESCRIPTION') ?></td>
-					<td nowrap="nowrap" width="40px" class="sectiontableheader"><?php echo JText::_('COND') ?></td>
-					<td nowrap="nowrap" width="34px" class="sectiontableheader"><?php echo JText::_('QTY') ?></td>
-					<td nowrap="nowrap" width="40px" class="sectiontableheader"><?php echo JText::_('PRICE') ?></td>
+					<th nowrap="nowrap" width="70px" class="sectiontableheader"><?php echo JText::_('BRAND') ?></th>
+					<th nowrap="nowrap" width="190px" class="sectiontableheader"><?php echo JText::_('PART NUMBER') ?></th>
+					<th nowrap="nowrap" width="260px" class="sectiontableheader"><?php echo JText::_('DESCRIPTION') ?></th>
+					<th nowrap="nowrap" width="40px" class="sectiontableheader"><?php echo JText::_('COND') ?></th>
+					<th nowrap="nowrap" width="34px" class="sectiontableheader"><?php echo JText::_('QTY') ?></th>
+					<th nowrap="nowrap" width="40px" class="sectiontableheader"><?php echo JText::_('PRICE') ?></th>
 				</tr>
 			</thead>
 			<tbody>
