@@ -33,5 +33,25 @@ jQuery(document).ready(function($){
     $('.navbar-nav .dropdown-toggle').removeAttr('data-toggle');
 
     $('#mfc').chosen();
+
+    // hides submenu ul when children are all hidden
+    var parent = $('ul.dropdown-menu li.parent');
+    parent.each(function(){
+        $(this).children('ul').each(function(){
+            var empty = true;
+            $(this).children('li').each(function(){
+                if (!$(this).children('a').hasClass('hide')) {
+                    empty = false;
+                    return false;
+                }
+            });
+            if (empty) {
+                $(this).parent().parent().children('li').children('a').addClass('no-caret');
+                $(this).hide();
+                $(this).css('padding','0');
+                $(this).css('border','0');
+            }
+        })
+    });
 	
 });

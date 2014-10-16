@@ -5962,6 +5962,7 @@ td.visible-print {
 .contentpaneopen .field span {
   display: block;
   font-weight: bold;
+  font-size: 13px;
 }
 .contentpaneopen .field input[type="submit"] {
   margin-top: 20px;
@@ -5974,6 +5975,9 @@ td.visible-print {
 }
 .contentpaneopen .field:first-child {
   margin-left: 0;
+}
+.contentpaneopen .chosen-single span {
+  font-weight: normal;
 }
 .contentpaneopen table#gm-table-part-list {
   margin-top: 10px;
@@ -6272,6 +6276,9 @@ h4 {
 #menu .dropdown-menu li.current > a,
 #menu .dropdown-menu li.active > a {
   background-color: #00539c;
+}
+#menu li a.no-caret:after {
+  display: none;
 }
 #slider,
 #banner {
