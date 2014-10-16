@@ -34,22 +34,14 @@ jQuery(document).ready(function($){
 
     $('#mfc').chosen();
 
-    // hides submenu ul when children are all hidden
-    var parent = $('ul.dropdown-menu li.parent');
+    // reveals caret when a menu item with 'no-caret' class has visible children (fields only visible for logged in users)
+    var parent = $('ul.nav.menu a.no-caret').parent();
     parent.each(function(){
-        $(this).children('ul').each(function(){
-            var empty = true;
-            $(this).children('li').each(function(){
-                if (!$(this).children('a').hasClass('hide')) {
-                    empty = false;
-                    return false;
-                }
-            });
-            if (empty) {
-                $(this).parent().parent().children('li').children('a').addClass('no-caret');
+        $(this).children('ul').children('li').each(function(){
+            if (!$(this).children('a').hasClass('hide')) {
+                $(this).parent().parent().children('a.no-caret').removeClass('no-caret');
+            } else {
                 $(this).hide();
-                $(this).css('padding','0');
-                $(this).css('border','0');
             }
         })
     });

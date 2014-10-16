@@ -161,8 +161,18 @@ h4 {
             background-color: @nav-link-hover-bg;
         }
 	}
-    li a.no-caret:after {
-        display: none;
+}
+// hides submenu ul and caret when all children are hidden
+.nav.menu {
+    li a.no-caret {
+        &:after, .caret {
+            display: none;
+        }
+        & + ul {
+            display: none;
+            padding: 0 !important;
+            border: 0 !important;
+        }
     }
 }
 #slider,
@@ -285,9 +295,6 @@ h4 {
 		border-bottom: 1px solid #bfbfbf;
 	}
     li.deeper {
-        padding-bottom: 8px;
-        border-bottom: 1px solid #e6e6e6;
-
         > a {
             border-bottom: none;
         }
@@ -305,6 +312,12 @@ h4 {
                 }
             }
         }
+    }
+    li.deeper + li.parent {
+        margin-top: 8px;
+    }
+    li.deeper + li {
+        border-top: 1px solid #e6e6e6;
     }
 }
 .module-productinfo {
