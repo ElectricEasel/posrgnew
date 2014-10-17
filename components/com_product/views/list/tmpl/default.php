@@ -37,7 +37,7 @@ $i		= 0;
                 <h4 class="gm-name gm-ptitle"><?php echo $item->product_name ?></h4>
                 <div class="gm-description hide-mobile"><?php echo $item->product_des ?></div>
                 <div>Price: <span class="gm-price">$<?php echo number_format($item->price, 2) ?></span></div>
-                <a href="<?php echo $buyUrl; ?>" title="<?php echo $item->product_name; ?>" class="buynow">
+                <a href="<?php echo $buyUrl; ?>" title="<?php echo $item->product_name; ?>" class="button-gradient buynow">
                     <?php echo JText::_('Buy Now') ?>
 
                 </a>

@@ -162,17 +162,7 @@
                         font-size: 13px;
                     }
                     input[type="submit"] {
-                        height: 45px;
-                        border-radius: 0;
-                        font-size: 17px;
-                        background: #275daa; /* Old browsers */
-                        background: -moz-linear-gradient(top,  #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%); /* FF3.6+ */
-                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#275daa), color-stop(16%,#265aa6), color-stop(75%,#1d4a89), color-stop(100%,#1b4580)); /* Chrome,Safari4+ */
-                        background: -webkit-linear-gradient(top,  #275daa 0%,#265aa6 16%,#1d4a89 75%,#1b4580 100%); /* Chrome10+,Safari5.1+ */
-                        background: -o-linear-gradient(top,  #275daa 0%,#265aa6 16%,#1d4a89 75%,#1b4580 100%); /* Opera 11.10+ */
-                        background: -ms-linear-gradient(top,  #275daa 0%,#265aa6 16%,#1d4a89 75%,#1b4580 100%); /* IE10+ */
-                        background: linear-gradient(to bottom,  #275daa 0%,#265aa6 16%,#1d4a89 75%,#1b4580 100%); /* W3C */
-                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#275daa', endColorstr='#1b4580',GradientType=0 ); /* IE6-9 */
+                        .button-mobile-style;
                     }
                 }
             }
@@ -265,4 +255,129 @@
             }
         }
     }
+}
+.quotebox {
+    padding: 15px;
+    margin-bottom: 15px;
+
+    .quotebox-inner {
+        .logobox {
+            width: 100%;
+            border-bottom: 2px solid #bdbdbd;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 10px;
+
+            @media (max-width:767px) {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        p:last-child {
+            margin: 0;
+        }
+        h2 + .form_item .form_element {
+            width: 100%;
+            border-bottom: 2px solid #bdbdbd;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+        .form_item + .form_item {
+            overflow: hidden;
+
+            p {
+                font-size: 12px;
+
+                span {
+                    color: red;
+                }
+            }
+        }
+        #userForm {
+            li {
+                margin: 5px 0;
+            }
+            .formCaption {
+                display: block;
+                float: left;
+                width: 25%;
+                color: #06c;
+                font-size: 14px;
+                line-height: 1.2em;
+            }
+            .formBody {
+                input {
+                    border: 1px solid #CACACA;
+                    color: #000;
+                    font-size: 14px;
+                    padding: 4px;
+                    height: 26px;
+                }
+            }
+            .rsform-block-notes {
+                margin-top: 20px;
+            }
+            .rsform-block-submit {
+                width: 100%;
+                text-align: center;
+
+                #submit {
+                    font-size: 12px;
+                    padding: 3px 45px;
+                    text-transform: lowercase;
+                }
+            }
+            @media (max-width:991px) {
+                .formCaption {
+                    margin-bottom: 3px;
+                }
+                .rsform-block {
+                    width: 100% !important;
+
+                    input {
+                        width: 100% !important;
+                        height: 38px;
+                    }
+                }
+                .rsform-block-notes textarea {
+                    width: 100% !important;
+                }
+                .rsform-block-submit #submit {
+                    .button-mobile-style;
+                    display: block;
+                    width: 100%;
+                    text-transform: capitalize;
+                }
+            }
+            @media (max-width:767px) {
+                .rsform-block {
+                    input {
+                        border-radius: 6px;
+                        margin-bottom: 15px;
+                    }
+                }
+                .rsform-block-notes {
+                    margin-top: 0;
+
+                    textarea {
+                        border-radius: 6px;
+                    }
+                }
+                h2 {
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
+.quotebox.dropshadow {
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
 }

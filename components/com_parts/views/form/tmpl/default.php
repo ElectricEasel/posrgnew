@@ -7,15 +7,19 @@ JRequest::setVar('part_number', $this->item->part_number);
 JRequest::setVar('form_name', 'Quick Quote: Inventory');
 JRequest::setVar('inventory_type', $this->item->inventory_type);
 
+$image = $this->item->image ? $this->item->image : '/images/brands/posrg_search.png';
+$mfc = $this->item->mfc ? $this->item->mfc : '';
+$part_number = $this->item->part_number ? $this->item->part_number : '';
+$des = $this->item->des ? $this->item->des : '';
 ?>
 <div class="quotebox dropshadow">
     <div class="quotebox-inner">
         <div class="logobox">
-            <img src="<?php echo $this->item->image; ?>" /> <br /><br />
+            <img src="<?php echo $image; ?>" /> <br /><br />
         </div>
-        <p><strong>Manufacturer:</strong> <?php echo $this->item->mfc; ?></p>
-        <p><strong>Part:</strong> <?php echo $this->item->part_number; ?></p>
-        <p><strong>Description:</strong> <?php echo $this->item->des; ?></p>
+        <p><strong>Manufacturer:</strong> <?php echo $mfc; ?></p>
+        <p><strong>Part:</strong> <?php echo $part_number; ?></p>
+        <p><strong>Description:</strong> <?php echo $des; ?></p>
     </div>
 </div>
 <div class="quotebox dropshadow">
