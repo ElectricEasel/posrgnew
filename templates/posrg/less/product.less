@@ -143,3 +143,80 @@
         }
     }
 }
+.quotebox {
+    padding: 15px;
+    margin-bottom: 15px;
+
+    .quotebox-inner {
+        .logobox {
+            width: 100%;
+            border-bottom: 2px solid #bdbdbd;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        p:last-child {
+            margin: 0;
+        }
+        h2 + .form_item .form_element {
+            width: 100%;
+            border-bottom: 2px solid #bdbdbd;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+        .form_item + .form_item {
+            overflow: hidden;
+
+            p {
+                font-size: 12px;
+
+                span {
+                    color: red;
+                }
+            }
+        }
+        #userForm {
+            li {
+                margin: 5px 0;
+            }
+            .formCaption {
+                display: block;
+                float: left;
+                width: 25%;
+                color: #06c;
+                font-size: 14px;
+                line-height: 1.2em;
+            }
+            .formBody {
+                input {
+                    border: 1px solid #CACACA;
+                    color: #000;
+                    font-size: 14px;
+                    padding: 4px;
+                    height: 26px;
+                }
+            }
+            .rsform-block-submit {
+                width: 100%;
+                text-align: center;
+
+                #submit {
+                    font-size: 12px;
+                    padding: 3px 45px;
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+}
+.quotebox.dropshadow {
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
