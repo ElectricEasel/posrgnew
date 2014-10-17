@@ -1,34 +1,46 @@
 @import "bootstrap/bootstrap.less";
+@import "buttons.less";
 @import "variables.less";
 @import "parts.less";
 @import "product.less";
 
 .hide-mobile {
     @media (max-width:@screen-xs-max) {
-        display: none;
+        display: none !important;
     }
 }
 .hide-desktop {
     @media (min-width:@screen-sm-min) {
-        display: none;
+        display: none !important;
     }
 }
 .hide-tablet {
     @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
-        display: none;
+        display: none !important;
     }
 }
 .hide-desktop-only {
     @media (min-width:@screen-md-min) {
-        display: none;
+        display: none !important;
     }
 }
 .hide-mobile-small {
     @media (max-width:@screen-xs) {
-        display: none;
+        display: none !important;
+    }
+}
+.hide-desktop-small {
+    @media (min-width:@screen-tablet-min) {
+        display: none !important;
     }
 }
 
+#content.pull-right, .sidebar-left.pull-left {
+    @media (max-width:@screen-xs-max) {
+        float: none !important;
+        clear: both;
+    }
+}
 .body-bg {
 	background: url(../images/bg-body.png) repeat 0 0 @gray-lightest;
 }
@@ -130,6 +142,9 @@ h4 {
 	}
 }
 #menu {
+    .container {
+        overflow: visible;
+    }
 	#gradient.vertical(#0078C7, #005FAA);
 	
 	a {
@@ -790,9 +805,7 @@ ul#featuredlist {
             color: #2073cd;
             margin: 14px 0;
         }
-        a.button {
-            display: inline-block;
-            color: #fff;
+        a.btn {
             font-size: 12px;
             line-height: 1em;
             font-weight: bold;
@@ -808,20 +821,8 @@ ul#featuredlist {
                 text-decoration: none;
             }
         }
-        a.button.button-blue {
-            background: #0f66cb;
+        a.btn.button-blue {
             margin-right: 7px;
-
-            &:hover {
-                background: #007cf8;
-            }
-        }
-        a.button.button-gray {
-            background: #646464;
-
-            &:hover {
-                background: #8A8A8A;
-            }
         }
     }
 }
