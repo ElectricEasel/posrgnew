@@ -29,9 +29,8 @@
                 text-decoration: none;
             }
         }
-        .gm-image-container img {
+        .gm-image-container {
             height: 100px;
-            width: auto;
         }
         .gm-name {
             color: #000;
@@ -41,6 +40,10 @@
         }
         .gm-description {
             font-size: 12px;
+
+            @media (max-width:991px) and (min-width:768px) {
+                min-height: 34px;
+            }
         }
         .gm-description + div {
             font-size: 13px;
@@ -77,6 +80,66 @@
                 background: linear-gradient(top, #2D53BB 0%,#2E84F1 51%,#2D53BB 56%,#2E84F1 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2D53BB', endColorstr='#2E84F1',GradientType=0 );
             }
+        }
+        @media (max-width:767px) {
+            border: none;
+            clear: both;
+            overflow: hidden;
+            padding: 20px 0;
+            text-align: left;
+            border-top: 1px solid #e6e6e8;
+            border-radius: none;
+
+            .gm-image-container {
+                float: right;
+                width: 140px;
+                text-align: left;
+
+                img {
+                    height: 100%;
+                    max-width: 136px;
+                    background: #fff;
+                    padding: 7px;
+                    box-sizing: border-box;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                }
+            }
+            .gm-name {
+                font-size: 17px;
+            }
+            .gm-description + div {
+                font-size: 13px;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 15px 0 17px;
+
+                .gm-price {
+                    font-size: 13px;
+                }
+            }
+            a.buynow {
+                background: #0066cc;
+                border: 1px solid #0059b3;
+                text-transform: uppercase;
+                font-size: 14px;
+                padding: 5px 35px;
+                margin: 0;
+
+                &:hover, &:focus {
+                    background: #0052a3;
+                    border-color: #003b75;
+                }
+            }
+        }
+    }
+    h2 + .gm-box .gm-item {
+        @media (max-width:767px) {
+            border-top: none;
+        }
+    }
+    .gm-box {
+        @media (max-width:767px) {
+            padding: 0;
         }
     }
 }

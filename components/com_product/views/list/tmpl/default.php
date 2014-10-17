@@ -24,7 +24,7 @@ $i		= 0;
 			?>
     <div class="gm-box">
         <div class="gm-item">
-            <a href="<?php echo $lightbox; ?>" class="fancybox gm-enlarge">
+            <a href="<?php echo $lightbox; ?>" class="fancybox gm-enlarge hide-mobile">
                 <?php echo JText::_('GM_PRODUCT_LIGHTBOX')?>
 
             </a>
@@ -35,7 +35,7 @@ $i		= 0;
             </div>
             <div>
                 <h4 class="gm-name gm-ptitle"><?php echo $item->product_name ?></h4>
-                <div class="gm-description"><?php echo $item->product_des ?></div>
+                <div class="gm-description hide-mobile"><?php echo $item->product_des ?></div>
                 <div>Price: <span class="gm-price">$<?php echo number_format($item->price, 2) ?></span></div>
                 <a href="<?php echo $buyUrl; ?>" title="<?php echo $item->product_name; ?>" class="buynow">
                     <?php echo JText::_('Buy Now') ?>
