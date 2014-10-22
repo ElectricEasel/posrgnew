@@ -6548,11 +6548,6 @@ input[type="button"].btn-block {
     padding-top: 20px;
     text-align: center;
   }
-  .contentpaneopen .mobile-parts-list .mobile-parts-item:first-child {
-    border-top: 0;
-    margin-top: 0;
-    padding-top: 0;
-  }
   .contentpaneopen .mobile-parts-list .mobile-parts-item table {
     width: 100%;
     text-align: left;
@@ -6597,6 +6592,11 @@ input[type="button"].btn-block {
     margin-top: 15px;
     text-transform: uppercase;
     padding: 5px 40px;
+  }
+  .contentpaneopen .mobile-parts-list .gm-part-toolbar + .mobile-parts-item {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
   }
   .contentpaneopen .mobile-parts-list .gm-part-toolbar {
     overflow: hidden;
