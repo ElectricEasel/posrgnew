@@ -118,3 +118,133 @@
         }
     }
 }
+#gm-family-detail {
+    .gm-item-form {
+        margin-bottom: 15px;
+
+        img {
+            margin: 0 15px 15px 0;
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid #E8E7E7;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+            padding: 12px;
+        }
+        .spec-name {
+            font-size: 20px;
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .product-desc {
+            font-size: 14px;
+            color: #1c66cc;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .price {
+            font-size: 13px;
+            margin-bottom: 14px;
+
+            .gm-price {
+                color: #0066cc;
+                font-weight: bold;
+            }
+        }
+        .contact-text {
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+    .required-key {
+        margin-bottom: 10px;
+        display: block;
+        font-size: 13px;
+    }
+    .specials-form-wrap {
+        background: #f4f9fd;
+        border: 1px solid #e3e3e3;
+        color: #0861ce;
+        padding: 15px;
+
+        #userForm {
+            li {
+                margin: 5px 0;
+            }
+            .formCaption {
+                display: block;
+                float: left;
+                width: 25%;
+                color: #06c;
+                font-size: 14px;
+                line-height: 1.2em;
+            }
+            .formBody {
+                input {
+                    border: 1px solid #CACACA;
+                    color: #000;
+                    font-size: 14px;
+                    padding: 4px;
+                    height: 26px;
+                }
+            }
+            .rsform-block-notes {
+                margin-top: 20px;
+            }
+            .rsform-block-submit {
+                width: 100%;
+                text-align: center;
+
+                #submit {
+                    font-size: 12px;
+                    padding: 3px 45px;
+                    text-transform: lowercase;
+                }
+            }
+            @media (max-width: 991px) {
+                .formCaption {
+                    margin-bottom: 3px;
+                }
+
+                .rsform-block {
+                    width: 100% !important;
+
+                    input {
+                        width: 100% !important;
+                        height: 38px;
+                    }
+                }
+
+                .rsform-block-notes textarea {
+                    width: 100% !important;
+                }
+
+                .rsform-block-submit #submit {
+                    .button-mobile-style;
+                    display: block;
+                    width: 100%;
+                    text-transform: capitalize;
+                }
+            }
+            @media (max-width: 767px) {
+                .rsform-block {
+                    input {
+                        border-radius: 6px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .rsform-block-notes {
+                    margin-top: 0;
+
+                    textarea {
+                        border-radius: 6px;
+                    }
+                }
+
+                h2 {
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
