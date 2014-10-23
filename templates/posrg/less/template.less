@@ -1,5 +1,4 @@
-@import "bootstrap/bootstrap.less";
-@import "buttons.less";
+@import "bootstrap/bootstrap.less"; // modified to replace mixins.less & buttons.less
 @import "variables.less";
 @import "parts.less";
 @import "product.less";
@@ -315,6 +314,9 @@ h4 {
 .header-services {
 	background-image: url(../images/headers/h-services.jpg);
 }
+.header-contact {
+    background-image: url(../images/headers/h-contact.jpg);
+}
 
 #mainbody .container,
 #slider .container,
@@ -407,12 +409,13 @@ h4 {
 		bottom: 10px;
 	}
 	.chat-online {
-		display: none;
+		display: block;
 		position: absolute;
+        max-width: 50%;
 		top:33%;
 		left: 10px;
-		@media (min-width:@screen-md) {
-			display: block;
+		@media (min-width:@screen-sm-min) and (max-width:@screen-sm-max) {
+			display: none;
 		}
 		
 	}
@@ -436,6 +439,24 @@ h4 {
 		left: 10px;
 		bottom: 10px;
 	}
+}
+.module-contact {
+    border-top: 8px solid @brand-primary;
+    .module-content {
+        padding: 15px 10px;
+
+        p {
+            font-size: 13px;
+            line-height: 1.5em;
+            margin: 10px 0 20px 0
+        }
+        img {
+            max-width: 100%;
+        }
+        span {
+            white-space: nowrap;
+        }
+    }
 }
 .sidebar-menu {
 	background: @gray-lightest;
@@ -1278,6 +1299,44 @@ ul#featuredlist {
             h2 {
                 margin: 5px 0;
             }
+        }
+    }
+}
+ul.contact-list {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+
+    li.item.bh {
+        min-height: 100px;
+
+        .bobblehead {
+            float: left;
+            min-width: 55px;
+        }
+    }
+    li.item {
+        .make-xs-column(6);
+        padding: 0;
+        background: none;
+        margin-bottom: 10px;
+
+        h6 {
+            font-size: 13px;
+            line-height: 1.2em;
+            font-weight: bold;
+            margin: 0;
+
+            span {
+                display: inline;
+            }
+        }
+        span {
+            display: block;
+            line-height: 1.2em;
+        }
+        span, a {
+            font-size: 13px;
         }
     }
 }
