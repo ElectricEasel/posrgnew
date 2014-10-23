@@ -110,7 +110,7 @@ class Category {
      * @var Category
      * @since 2.0
      */
-	protected $_parent;
+	public $_parent;
 
     /**
      * List of children categories

@@ -29,7 +29,7 @@ if (!($image = $this->category->getImage('content.image'))) {
 
 $css_class = $this->application->getGroup().'-'.$this->template->name;
 
-$title  = (($first = $this->category->_parent->_parent->name) != 'ROOT') ? $first . ' ' : '';
+$title  = (($first = @$this->category->_parent->_parent->name) != 'ROOT') ? $first . ' ' : '';
 $title .= (($second = $this->category->_parent->name) != 'ROOT') ? $second : '';
 if(($cat = $this->category->name) != NULL && $this->category->_parent->name != 'ROOT')
 {
