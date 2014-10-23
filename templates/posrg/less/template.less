@@ -879,3 +879,405 @@ ul#featuredlist {
         }
     }
 }
+.preferred-oems {
+    #mainbody.interior .container {
+        padding-top: 0;
+    }
+    #content {
+        padding: 0;
+    }
+    .pp-header {
+        background: url(/templates/posrg/images/header-partners.jpg) no-repeat center bottom #fafafa;
+        padding: 30px 40px 275px;
+        min-height: 200px;
+        text-align: center;
+        margin-bottom: 50px;
+
+        h1 {
+            color: @brand-primary;
+            font-size: 39px;
+            margin: 0;
+            line-height: 1.2em;
+            font-weight: bold;
+        }
+        p {
+            font-size: 17px;
+            color: #666;
+            margin: 15px 0;
+            font-weight: bold;
+            line-height: 1.35em;
+        }
+        @media (max-width:@screen-sm-max) {
+            margin-bottom: 30px;
+
+            h1 {
+                font-size: 36px;
+            }
+        }
+        @media (max-width:@screen-xs-max) {
+            background: @gray-lighter;
+            padding-bottom: 20px;
+            margin-bottom: 0;
+            min-height: 0;
+
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        @media (max-width:@screen-xs) {
+            h1 {
+                font-size: 18px;
+            }
+        }
+    }
+    .pp-product {
+        padding: 20px 85px;
+
+        img {
+            display: block;
+        }
+        h6 {
+            font-size: 14px;
+            color: #5d5d5d;
+            margin: 15px 0 10px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .pp-links {
+            a {
+                font-weight: bold;
+                font-size: 12px;
+                text-decoration: underline;
+            }
+            i {
+                margin: 0 0.35em;
+            }
+        }
+        @media (max-width:@screen-xs-max) {
+            padding: 20px 25px;
+
+            .pp-links {
+                display: block;
+                margin-bottom: 10px;
+                a {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    .pp-datalogic {
+        background: url(/images/brands/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
+        min-height: 270px;
+        padding-right: 380px;
+        padding-top: 40px;
+
+        @media (max-width:@screen-sm-max) {
+            padding-right: 270px;
+        }
+        @media (max-width:@screen-xs-max) {
+            padding-right: 25px;
+            background: none;
+            min-height: 0;
+        }
+    }
+    .pp-epson {
+        background: url(/images/brands/pref-partners/epson.jpg) no-repeat center bottom transparent;
+        min-height: 265px;
+        padding-left: 350px;
+        padding-top: 60px;
+
+        @media (max-width:@screen-sm-max) {
+            padding-left: 280px;
+            padding-top: 40px;
+            background-position: -150px bottom;
+        }
+        @media (max-width:@screen-xs-max) {
+            padding-top: 0;
+            padding-left: 25px;
+            background: none;
+            min-height: 0;
+        }
+    }
+    .pp-elo {
+        background: url(/images/brands/pref-partners/elo.jpg) no-repeat center bottom transparent;
+        min-height: 322px;
+        padding-right: 470px;
+        padding-top: 52px;
+
+        @media (max-width:@screen-sm-max) {
+            padding-right: 400px;
+            padding-top: 40px;
+            min-height: 352px;
+            background-position: 70% bottom;
+        }
+        @media (max-width:@screen-xs-max) {
+            padding-top: 0;
+            padding-right: 25px;
+            background: none;
+            min-height: 0;
+        }
+    }
+    .pp-hp {
+        background: url(/images/brands/pref-partners/hp.jpg) no-repeat center top transparent;
+        min-height: 441px;
+        padding-top: 300px;
+        padding-right: 85px;
+
+        img {
+            float: left;
+            padding: 0 20px 50px 0;
+        }
+        h6 {
+            margin-top: 0;
+        }
+        @media (max-width:@screen-sm-max) {
+            .pp-links {
+                display: block;
+            }
+        }
+        @media (max-width:@screen-xs-max) {
+            background: none;
+            padding-top: 0;
+            padding-right: 25px;
+            min-height: 0;
+
+            img {
+                float: none;
+                padding: 0 0 15px;
+            }
+        }
+    }
+    #pp-boxes {
+        background: url(/templates/posrg/images/dropshadow-top.png) repeat-x 0 0 transparent;
+        padding: 40px 25px 30px;
+        text-align: center;
+        overflow: hidden;
+
+        .pp-box {
+            .make-sm-column(4);
+            min-height: 214px;
+            border-top: 5px solid @brand-primary;
+            background: url(/templates/posrg/images/checker-fade.png) repeat-x 0 0 #f5f5f5;
+            background: url(/templates/posrg/images/checker-fade.png) 0 0 repeat-x, url(/templates/posrg/images/dropshadow-bottom.png) 0 100% repeat-x;
+            background-color: #f5f5f5;
+            padding-bottom: 30px;
+
+            > div {
+                min-height: 153px;
+                padding: 0 35px;
+            }
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            h3 {
+                color: @brand-primary;
+                font-size: 25px;
+                line-height: 1.2em;
+                text-transform: none;
+                font-weight: bold;
+                margin: 0;
+                padding: 15px 0 0;
+            }
+            p {
+                margin: 10px 0 0;
+                line-height: 1.3em;
+                font-size: 13px;
+            }
+        }
+        .pp-trade {
+            img {
+                padding: 20px 0 0;
+            }
+        }
+        .pp-chat {
+            h3 {
+                background: url(/templates/posrg/images/icon-chat.png) no-repeat 100% 55% transparent;
+                line-height: 2em;
+                display: inline-block;
+                padding: 15px 60px 10px 0;
+            }
+        }
+        .pp-contact {
+            h3 {
+                background: url(/templates/posrg/images/icon-phone.png) no-repeat 100% 80% transparent;
+                padding: 15px 60px 0 0;
+                display: inline-block;
+            }
+        }
+        .btn {
+            font-size: 13px;
+            line-height: 20px;
+            padding: 3px 25px;
+        }
+        @media (max-width:@screen-sm-max) {
+            .pp-box {
+                > div {
+                    padding: 0 20px;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+                img {
+                    max-width: 100%;
+                }
+            }
+            .pp-chat h3 {
+                padding-right: 40px;
+                background-size: 25%;
+            }
+            .pp-contact h3 {
+                padding-right: 40px;
+                background-size: 25%;
+                width: 100%;
+            }
+        }
+        @media (max-width:@screen-xs-max) {
+            .pp-box {
+                min-height: 0;
+
+                >div {
+                    min-height: 0;
+                    margin-bottom: 20px;
+                }
+            }
+            .pp-contact h3 {
+                display: inline-block;
+                padding-right: 50px;
+                width: auto;
+                background-size: 25%;
+            }
+        }
+    }
+    #pp-boxes + h3 {
+        font-size: 16px;
+        color: @black;
+        margin: 20px 0;
+        padding: 0 25px;
+        font-weight: bold;
+        clear: both;
+
+        @media (max-width:@screen-sm-max) {
+            font-size: 14px;
+        }
+        @media (max-width:@screen-xs-max) {
+            margin-top: 0;
+        }
+    }
+    #pref-partners-form-wrap {
+        padding: 0 25px;
+    }
+    #pref-partners {
+        background: #f4f9fd;
+        border: 1px solid #e3e3e3;
+        color: @black;
+        padding: 20px 25px;
+
+        h3 {
+            font-size: 16px;
+            margin-top: 0;
+        }
+        .formControlLabel {
+            text-align: left;
+            width: 115px;
+            padding-top: 5px;
+            box-sizing: border-box;
+            color: @black;
+            font-size: 13px;
+            display: inline-block;
+            vertical-align: top;
+            line-height: 1.2em;
+        }
+        .formControls {
+            width: 310px;
+            display: inline-block;
+            vertical-align: top;
+
+            input[type='text'] {
+                border: 1px solid #CACACA;
+                color: @black;
+                font-size: 14px;
+                padding: 4px;
+                height: 26px;
+            }
+            input[type='text'], textarea {
+                width: 100%;
+            }
+        }
+        .rsform-block {
+            display: inline-block;
+            margin-bottom: 26px;
+        }
+        .rsform-block:nth-child(even) {
+            margin-left: 20px;
+        }
+        .rsform-block-info .formControls {
+            width: 763px;
+        }
+        .rsform-block-submit {
+            width: 100%;
+            text-align: center;
+
+            #submit {
+                font-size: 12px;
+                padding: 4px 35px;
+                text-transform: lowercase;
+            }
+        }
+        @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+            .formControlLabel {
+                width: 110px;
+            }
+            .formControls {
+                width: 305px;
+            }
+            .rsform-block-info .formControls {
+                width: 748px;
+            }
+        }
+        @media (max-width: @screen-sm-max) {
+            .formControlLabel {
+                margin-bottom: 3px;
+                width: 100% !important;
+                display: block;
+            }
+            .formControls {
+                width: 100% !important;
+                display: block;
+
+                input[type='text'] {
+                    width: 100% !important;
+                    height: 38px;
+                }
+            }
+            .rsform-block {
+                width: 100% !important;
+                margin: 0 !important;
+            }
+            .rsform-block-submit #submit {
+                .button-mobile-style;
+                display: block;
+                width: 100%;
+                text-transform: capitalize;
+            }
+        }
+        @media (max-width: @screen-xs-max) {
+            .rsform-block {
+                input {
+                    border-radius: 6px;
+                    margin-bottom: 15px;
+                }
+            }
+            h2 {
+                margin: 5px 0;
+            }
+        }
+    }
+}
