@@ -22,9 +22,9 @@ defined('_JEXEC') or die('Restricted access');
 
 			// init vars
 			$i = 0;
-			$columns = $this->params->get('template.categories_cols', 2);			
+			$columns = $this->params->get('template.categories_cols', 2);
 			reset($this->selected_categories);
-			
+
 			// render rows
 			while((list($key, $category) = each($this->selected_categories)) || ($i % $columns != 0)) {
 				if ($category && !$category->totalItemCount()) continue;
@@ -35,6 +35,6 @@ defined('_JEXEC') or die('Restricted access');
 			}
 			echo '</div>';
 		
-		?>									
-        
+		?>
+
 </div>

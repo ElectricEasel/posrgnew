@@ -7,7 +7,7 @@ JRequest::setVar('part_number', $this->item->part_number);
 JRequest::setVar('form_name', 'Quick Quote: Inventory');
 JRequest::setVar('inventory_type', $this->item->inventory_type);
 
-$image = $this->item->image ? $this->item->image : '/images/brands/posrg_search.png';
+$image = $this->item->image ? $this->item->image : '/images/stories/brands/posrg_search.png';
 $mfc = $this->item->mfc ? $this->item->mfc : '';
 $part_number = $this->item->part_number ? $this->item->part_number : '';
 $des = $this->item->des ? $this->item->des : '';

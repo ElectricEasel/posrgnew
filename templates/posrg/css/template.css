@@ -7886,7 +7886,7 @@ ul#featuredlist li a.btn.button-blue {
   }
 }
 .preferred-oems .pp-datalogic {
-  background: url(/images/brands/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
+  background: url(/images/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
   min-height: 270px;
   padding-right: 380px;
   padding-top: 40px;
@@ -7904,7 +7904,7 @@ ul#featuredlist li a.btn.button-blue {
   }
 }
 .preferred-oems .pp-epson {
-  background: url(/images/brands/pref-partners/epson.jpg) no-repeat center bottom transparent;
+  background: url(/images/pref-partners/epson.jpg) no-repeat center bottom transparent;
   min-height: 265px;
   padding-left: 350px;
   padding-top: 60px;
@@ -7925,7 +7925,7 @@ ul#featuredlist li a.btn.button-blue {
   }
 }
 .preferred-oems .pp-elo {
-  background: url(/images/brands/pref-partners/elo.jpg) no-repeat center bottom transparent;
+  background: url(/images/pref-partners/elo.jpg) no-repeat center bottom transparent;
   min-height: 322px;
   padding-right: 470px;
   padding-top: 52px;
@@ -7947,7 +7947,7 @@ ul#featuredlist li a.btn.button-blue {
   }
 }
 .preferred-oems .pp-hp {
-  background: url(/images/brands/pref-partners/hp.jpg) no-repeat center top transparent;
+  background: url(/images/pref-partners/hp.jpg) no-repeat center top transparent;
   min-height: 441px;
   padding-top: 300px;
   padding-right: 85px;
@@ -8264,4 +8264,20 @@ ul.contact-list li.item span {
 ul.contact-list li.item span,
 ul.contact-list li.item a {
   font-size: 13px;
+}
+.com_zoo #yoo-zoo {
+  width: 100%;
+}
+.com_zoo #yoo-zoo img {
+  max-width: 100%;
+  height: auto;
+}
+.com_zoo #yoo-zoo table {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .com_zoo #yoo-zoo table td {
+    font-size: 12px;
+  }
 }

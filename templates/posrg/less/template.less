@@ -1,5 +1,4 @@
-@import "bootstrap/bootstrap.less"; // modified to replace mixins.less & buttons.less
-@import "variables.less";
+@import "bootstrap/bootstrap.less"; // modified to replace variables.less, mixins.less, buttons.less
 @import "parts.less";
 @import "product.less";
 
@@ -994,7 +993,7 @@ ul#featuredlist {
         }
     }
     .pp-datalogic {
-        background: url(/images/brands/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
+        background: url(/images/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
         min-height: 270px;
         padding-right: 380px;
         padding-top: 40px;
@@ -1009,7 +1008,7 @@ ul#featuredlist {
         }
     }
     .pp-epson {
-        background: url(/images/brands/pref-partners/epson.jpg) no-repeat center bottom transparent;
+        background: url(/images/pref-partners/epson.jpg) no-repeat center bottom transparent;
         min-height: 265px;
         padding-left: 350px;
         padding-top: 60px;
@@ -1027,7 +1026,7 @@ ul#featuredlist {
         }
     }
     .pp-elo {
-        background: url(/images/brands/pref-partners/elo.jpg) no-repeat center bottom transparent;
+        background: url(/images/pref-partners/elo.jpg) no-repeat center bottom transparent;
         min-height: 322px;
         padding-right: 470px;
         padding-top: 52px;
@@ -1046,7 +1045,7 @@ ul#featuredlist {
         }
     }
     .pp-hp {
-        background: url(/images/brands/pref-partners/hp.jpg) no-repeat center top transparent;
+        background: url(/images/pref-partners/hp.jpg) no-repeat center top transparent;
         min-height: 441px;
         padding-top: 300px;
         padding-right: 85px;
@@ -1338,5 +1337,22 @@ ul.contact-list {
         span, a {
             font-size: 13px;
         }
+    }
+}
+.com_zoo #yoo-zoo {
+    width: 100%;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    table {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width:@screen-xs-max) {
+    .com_zoo #yoo-zoo table td {
+        font-size: 12px;
     }
 }

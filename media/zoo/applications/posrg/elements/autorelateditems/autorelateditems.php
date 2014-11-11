@@ -116,7 +116,7 @@ class ElementAutoRelatedItems extends Element {
 				// get dates
 				$db   = $this->app->database;
 				$date = $this->app->date->create();
-				$now  = $db->Quote($date->toMySQL());
+				$now  = $db->Quote($date->toSQL());
 				$null = $db->Quote($db->getNullDate());
 				$items_string = implode(', ', $items);
 				$conditions = $table->key.' IN ('.$items_string.')'

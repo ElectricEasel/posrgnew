@@ -193,7 +193,7 @@ class CategoryTable extends AppTable {
 			$db->query('SET SESSION group_concat_max_len = 1048576');
 
 			$select = 'c.*, GROUP_CONCAT(DISTINCT ci.item_id) as item_ids';
-			$from	= $this->name . ' as c  USE INDEX (APPLICATIONID_ID_INDEX2) LEFT JOIN '.ZOO_TABLE_CATEGORY_ITEM.' as ci ON ci.category_id = c.id';
+			$from	= $this->name . ' as c  USE INDEX (APPLICATIONID_ID_INDEX) LEFT JOIN '.ZOO_TABLE_CATEGORY_ITEM.' as ci ON ci.category_id = c.id';
 
 			if ($published) {
 
