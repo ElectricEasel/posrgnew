@@ -68,7 +68,7 @@ $this->app->document->setTitle($title);
                 	$return = '';
                 	if (is_object($this->category))
                 	{
-						$return .= (($first = $this->category->_parent->_parent->name) != 'ROOT') ? $first . ' ' : '';
+						$return .= (($first = @$this->category->_parent->_parent->name) != 'ROOT') ? $first . ' ' : '';
 						$return .= (($second = $this->category->_parent->name) != 'ROOT') ? $second : '';
 					}
 					if($return != '')
