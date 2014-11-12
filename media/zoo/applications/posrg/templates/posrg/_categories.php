@@ -34,7 +34,7 @@ defined('_JEXEC') or die('Restricted access');
 				$i++;
 			}
 			echo '</div>';
-		
+
 		?>
 
 </div>

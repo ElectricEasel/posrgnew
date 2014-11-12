@@ -90,6 +90,10 @@ else
 		}
 		?>
 
+        <?php if ($this->checkPosition('title')) : ?>
+            <h1 class="pos-title hide-desktop"><?php echo $this->renderPosition('title'); ?></h1>
+        <?php endif; ?>
+
 		<?php if ($this->checkPosition('media')) : ?>
 		<div class="pos-media <?php echo 'media-'.$view->params->get('template.item_media_alignment'); ?>">
 			<?php echo $this->renderPosition('media', array('style' => 'block')); ?>
@@ -97,7 +101,7 @@ else
 		<?php endif; ?>
 
 		<?php if ($this->checkPosition('title')) : ?>
-		<h1 class="pos-title"><?php echo $this->renderPosition('title'); ?></h1>
+		<h1 class="pos-title hide-mobile"><?php echo $this->renderPosition('title'); ?></h1>
 		<?php endif; ?>
 
 		<?php if ($this->checkPosition('meta')) : ?>
@@ -140,7 +144,7 @@ else
 		JRequest::setVar('manufacturer', getTopLevelCategory($this->_item)->name);
 		JRequest::setVar('part_number', $modelNumber);
 
-		echo RSFormProHelper::displayForm(3); ?>
+		echo RSFormProHelper::displayForm(1); ?>
 
 		<?php if ($this->checkPosition('bottom')) : ?>
 		<div class="pos-bottom">
