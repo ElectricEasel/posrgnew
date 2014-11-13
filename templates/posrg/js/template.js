@@ -47,5 +47,7 @@ jQuery(document).ready(function($){
     });
 
     $('.fancybox').fancybox();
+
+    $('#home-carousel').carousel({interval:0})
 	
 });
