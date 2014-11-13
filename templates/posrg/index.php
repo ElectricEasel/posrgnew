@@ -81,16 +81,15 @@ unset($this->_styleSheets[JURI::root(true).'/components/com_rsform/assets/css/fr
     <body class="<?php echo $bodyclass. " " .$parentName. " " .$active->alias. " " .$option. " view-" .$view. " " .$frontpage. " itemid-" .$itemid. " " .$loggedin. " " .$rtl_detection. " " .$pageclass; ?>">	<div class="body-wrapper" id="page">
 		<header id="header">
 			<div class="container">
+                <div class="pull-left brand">
+                    <a href="/" class="logo logo-header"></a>
+                </div>
 				<div id="top-toolbar" class="pull-right">
 					<div class="pull-right">
 						<?php if ($this->countModules('search')) : ?>
 							<jdoc:include type="modules" name="search" style="standard" />
 						<?php endif; ?>
 					</div>
-				</div>
-
-				<div class="pull-left">
-					<a href="/" class="logo logo-header"></a>
 				</div>
 				<a href="#sidebar">
 					<div type="button" class="navbar-toggle navbar-btn pull-right visible-xs">
