@@ -48,6 +48,8 @@ jQuery(document).ready(function($){
 
     $('.fancybox').fancybox();
 
-    $('#home-carousel').carousel({interval:0})
+    $('#home-carousel').carousel({
+        interval: 6000
+    })
 	
 });

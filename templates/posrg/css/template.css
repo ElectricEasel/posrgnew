@@ -6852,6 +6852,9 @@ h4 {
   }
 }
 @media (max-width: 767px) {
+  #header {
+    padding-bottom: 8px;
+  }
   #header .navbar-btn {
     position: absolute;
   }
@@ -7309,6 +7312,11 @@ h4 {
 @media (max-width: 480px) {
   #home-carousel .streamlined img {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  #home-carousel {
+    border-top: 6px solid #0066cc;
   }
 }
 .header {
@@ -7775,6 +7783,11 @@ textarea.home .inventory-search select {
 @media (max-width: 991px) and (min-width: 768px) {
   .home #below-content .module-text p {
     min-height: 4.95em;
+  }
+}
+@media (max-width: 480px) {
+  .home #below-content .module-text p {
+    min-height: 0;
   }
 }
 .home #below-content h3 {

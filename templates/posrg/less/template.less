@@ -221,6 +221,8 @@ h4 {
         }
 	}
     @media (max-width:@screen-xs-max) {
+        padding-bottom: 8px;
+
         .navbar-btn {
             position: absolute;
         }
@@ -648,6 +650,9 @@ h4 {
             }
         }
     }
+    @media (max-width:@screen-xs-max) {
+        border-top: 6px solid @brand-primary;
+    }
 }
 .header {
 	height: 116px;
@@ -986,6 +991,9 @@ h4 {
 
             @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
                 min-height: 4.95em;
+            }
+            @media (max-width:@screen-xs) {
+                min-height: 0;
             }
 		}
 	}
