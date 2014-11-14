@@ -695,6 +695,11 @@ h4 {
     background-image: url(../images/headers/h-contact.jpg);
 }
 
+.page-header {
+    @media (max-width:@screen-xs-max) {
+        text-align: center;
+    }
+}
 #mainbody .container,
 #slider .container,
 #banner .container {
@@ -1858,5 +1863,56 @@ ul.contact-list {
                 border-color: #025800 !important;
             }
         }
+    }
+}
+.facilities-tour {
+    .componentheading {
+        color: @brand-primary;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px 0 0.7em;
+    }
+    p {
+        text-align: center;
+
+        img {
+            margin-bottom: 6px;
+            max-width: 100%;
+        }
+        embed, iframe {
+            max-width: 100%;
+        }
+    }
+}
+.slider-main {
+    .slide-wrapper {
+        .box-sizing(content-box);
+    }
+}
+.thumbnail-scroller.vertical {
+    .box-sizing(content-box);
+
+    .visible-container {
+        .box-sizing(content-box);
+
+        .container {
+            box-shadow: none !important;
+        }
+        li.thumbnail-wrapper {
+            width: 81px !important;
+            height: 56px !important;
+            .box-sizing(content-box);
+
+            a.thumbnail {
+                width: 81px !important;
+                height: 56px !important;
+            }
+        }
+    }
+}
+@media (max-width:@screen-xs-max) {
+    .advanced-slider, #tour-heading {
+        display: none;
     }
 }

@@ -7358,6 +7358,11 @@ h4 {
 .header-contact {
   background-image: url(../images/headers/h-contact.jpg);
 }
+@media (max-width: 767px) {
+  .page-header {
+    text-align: center;
+  }
+}
 #mainbody .container,
 #slider .container,
 #banner .container {
@@ -8911,5 +8916,58 @@ fieldset[disabled] .com_zoo #yoo-zoo #userForm .gray_box .formContainer .btn.act
   .com_zoo #yoo-zoo .green_btn:hover {
     background-color: #0f6500 !important;
     border-color: #025800 !important;
+  }
+}
+.facilities-tour .componentheading {
+  color: #0066cc;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 0.7em;
+}
+.facilities-tour p {
+  text-align: center;
+}
+.facilities-tour p img {
+  margin-bottom: 6px;
+  max-width: 100%;
+}
+.facilities-tour p embed,
+.facilities-tour p iframe {
+  max-width: 100%;
+}
+.slider-main .slide-wrapper {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.thumbnail-scroller.vertical {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.thumbnail-scroller.vertical .visible-container {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.thumbnail-scroller.vertical .visible-container .container {
+  box-shadow: none !important;
+}
+.thumbnail-scroller.vertical .visible-container li.thumbnail-wrapper {
+  width: 81px !important;
+  height: 56px !important;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.thumbnail-scroller.vertical .visible-container li.thumbnail-wrapper a.thumbnail {
+  width: 81px !important;
+  height: 56px !important;
+}
+@media (max-width: 767px) {
+  .advanced-slider,
+  #tour-heading {
+    display: none;
   }
 }
