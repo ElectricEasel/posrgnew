@@ -8936,17 +8936,7 @@ fieldset[disabled] .com_zoo #yoo-zoo #userForm .gray_box .formContainer .btn.act
 .facilities-tour p iframe {
   max-width: 100%;
 }
-.slider-main .slide-wrapper {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-.thumbnail-scroller.vertical {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-.thumbnail-scroller.vertical .visible-container {
+.advanced-slider * {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -8955,13 +8945,6 @@ fieldset[disabled] .com_zoo #yoo-zoo #userForm .gray_box .formContainer .btn.act
   box-shadow: none !important;
 }
 .thumbnail-scroller.vertical .visible-container li.thumbnail-wrapper {
-  width: 81px !important;
-  height: 56px !important;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-.thumbnail-scroller.vertical .visible-container li.thumbnail-wrapper a.thumbnail {
   width: 81px !important;
   height: 56px !important;
 }
