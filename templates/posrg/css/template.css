@@ -6083,6 +6083,7 @@ h2 {
   margin: 10px 0;
   font-size: 24px;
   color: #0066cc;
+  font-weight: bold;
 }
 h3 {
   font-weight: normal;
@@ -6256,6 +6257,9 @@ ul.blue-arrow li {
   background-color: #005faa;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+#menu .dropdown-menu li a:after {
+  display: none;
 }
 #menu .dropdown-menu li a:focus,
 #menu .dropdown-menu li a:hover {
@@ -6875,6 +6879,9 @@ ul.blue-arrow li {
   border-bottom: 1px solid #e9e9e9;
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+.sidebar-menu a .caret {
+  display: none;
 }
 .sidebar-menu a:hover,
 .sidebar-menu a:focus {
@@ -8963,4 +8970,18 @@ fieldset[disabled] .com_zoo #yoo-zoo #userForm .gray_box .formContainer .btn.act
 }
 .quotebox.dropshadow {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.testimonial {
+  padding: 0 15px 15px 15px;
+  border-bottom: 1px dashed #0066cc;
+  margin-bottom: 20px;
+}
+.testimonial p {
+  font-style: italic;
+}
+.testimonial .testi-author {
+  font-weight: bold;
+}
+.testimonial:last-child {
+  border-bottom: none;
 }

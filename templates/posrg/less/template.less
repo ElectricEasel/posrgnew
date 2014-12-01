@@ -122,6 +122,7 @@ h2 {
     margin: 10px 0;
     font-size: 24px;
     color: @brand-primary;
+    font-weight: bold;
 }
 h3 {
     font-weight: normal;
@@ -297,7 +298,10 @@ ul.blue-arrow {
 				background-color: #005faa;
 				padding-top: 8px;
 				padding-bottom: 8px;
-				
+
+                &:after {
+                    display: none;
+                }
 				&:focus,
 				&:hover {
 					background-color: @nav-link-hover-bg;
@@ -874,6 +878,9 @@ ul.blue-arrow {
 		border-bottom: 1px solid @gray-lighter;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
+        .caret {
+            display: none;
+        }
 		&:hover,
 		&:focus {
 			color: @brand-primary;
@@ -2570,4 +2577,19 @@ ul.contact-list {
 }
 .quotebox.dropshadow {
     box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+.testimonial {
+    padding: 0 15px 15px 15px;
+    border-bottom: 1px dashed @brand-primary;
+    margin-bottom: 20px;
+
+    p {
+        font-style: italic;
+    }
+    .testi-author {
+        font-weight: bold;
+    }
+    &:last-child {
+        border-bottom: none;
+    }
 }
