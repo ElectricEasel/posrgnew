@@ -39,6 +39,7 @@ unset($this->_styleSheets[JURI::root(true).'/components/com_rsform/assets/css/fr
 		<script src="<?php echo $tplUrl; ?>/js/modernizr.custom.js" type="text/javascript"></script>
 		<script src="<?php echo $tplUrl; ?>/js/jquery.matchHeight.min.js" type="text/javascript"></script>
         <script src="<?php echo $tplUrl; ?>/js/chosen/chosen.jquery.min.js" type="text/javascript"></script>
+        <script src="<?php echo $tplUrl; ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
 		<script src="<?php echo $tplUrl; ?>/js/template.js" type="text/javascript"></script>
 		<script src="<?php echo $tplUrl; ?>/js/j-backbone.js" type="text/javascript"></script>
 		<!-- Place apple-touch-icon(s) in the site root directory -->
@@ -52,6 +53,7 @@ unset($this->_styleSheets[JURI::root(true).'/components/com_rsform/assets/css/fr
 		<?php endif; ?>
 		<link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/css/animate.css'); ?>" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/js/chosen/chosen.css'); ?>" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/js/fancybox/jquery.fancybox-1.3.4.css'); ?>" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/css/template.css'); ?>" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php echo getDebugAssetUrl($tplUrl . '/css/j-backbone.css'); ?>" type="text/css" media="screen" />
 		<jdoc:include type="head" />
@@ -66,20 +68,28 @@ unset($this->_styleSheets[JURI::root(true).'/components/com_rsform/assets/css/fr
 		<?php if (@filesize('templates/' . $this->template . '/js/analytics-head.js') > 5): ?>
 			   <?php include_once('templates/' . $this->template . '/js/analytics-head.js'); ?>
 		<?php endif; ?>
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+                $.src='//v2.zopim.com/?28HMYMeMVn2asz5zlB6L4jpFHKJGCfCN';z.t=+new Date;$.
+                    type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+        </script>
+        <!--End of Zopim Live Chat Script-->
 	</head>
     <body class="<?php echo $bodyclass. " " .$parentName. " " .$active->alias. " " .$option. " view-" .$view. " " .$frontpage. " itemid-" .$itemid. " " .$loggedin. " " .$rtl_detection. " " .$pageclass; ?>">	<div class="body-wrapper" id="page">
 		<header id="header">
 			<div class="container">
+                <div class="pull-left brand">
+                    <a href="/" class="logo logo-header"></a>
+                </div>
 				<div id="top-toolbar" class="pull-right">
 					<div class="pull-right">
 						<?php if ($this->countModules('search')) : ?>
 							<jdoc:include type="modules" name="search" style="standard" />
 						<?php endif; ?>
 					</div>
-				</div>
-
-				<div class="pull-left">
-					<a href="/" class="logo logo-header"></a>
 				</div>
 				<a href="#sidebar">
 					<div type="button" class="navbar-toggle navbar-btn pull-right visible-xs">

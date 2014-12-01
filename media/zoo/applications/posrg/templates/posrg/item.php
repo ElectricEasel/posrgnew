@@ -27,29 +27,29 @@ $css_class = $this->application->getGroup().'-'.$this->template->name;
 		<?php
 
 		$renderview = 'item.full';
-		echo $this->renderer->render($renderview, array('view' => $this, 'item' => $this->item)); 
-		
+		echo $this->renderer->render($renderview, array('view' => $this, 'item' => $this->item));
+
 		?>
-				
+
 		<?php if ($this->application->isCommentsEnabled() && ($this->item->isCommentsEnabled() || $this->item->getCommentsCount(1))) : ?>
 		<div class="feedback">
-		
+
 			<div class="box-t1">
 				<div class="box-t2">
 					<div class="box-t3"></div>
 				</div>
 			</div>
-			
+
 			<div class="box-1">
 				<?php echo $this->app->comment->renderComments($this, $this->item); ?>
 			</div>
-			
+
 			<div class="box-b1">
 				<div class="box-b2">
 					<div class="box-b3"></div>
 				</div>
 			</div>
-		
+
 		</div>
 		<?php endif; ?>
 

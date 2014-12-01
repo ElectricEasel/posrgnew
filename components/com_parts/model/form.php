@@ -35,7 +35,7 @@ class PartsModelForm extends JModelItem
 
 			$this->_item = $db->setQuery($query)->loadObject();
 
-            $imagePathString = '/images/brands/%s_search.png';
+            $imagePathString = '/images/stories/brands/%s_search.png';
 
             $possiblePath = sprintf($imagePathString, strtolower(str_replace(' ', '_', $this->_item->mfc)));
 

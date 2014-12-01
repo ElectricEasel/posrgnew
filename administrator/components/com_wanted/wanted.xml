@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>Wanted</name>
+	<creationDate>2014</creationDate>
+	<author>Ricky Goldman</author>
+	<version>1.0</version>
+
+	<administration>
+		<menu>Wanted</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>wanted.php</filename>
+		</files>
+	</administration>
+
+	<files folder="site">
+		<filename>wanted.php</filename>
+		<folder>assets</folder>
+		<folder>controller</folder>
+		<folder>model</folder>
+		<folder>table</folder>
+		<folder>views</folder>
+	</files>
+
+</extension>
