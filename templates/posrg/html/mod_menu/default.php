@@ -113,7 +113,13 @@ if ($item->id == 489)
 	// The next item is deeper.
 	if ($item->deeper)
 	{
+        //if ($item->parent_id > 1){echo "<pre>";var_dump($item);die;}
 		$childClasses = "nav-child unstyled small";
+
+        if ($item->parent_id > 1)
+        {
+            $childClasses .= ' sub-sub';
+        }
 
 		if ($isNavbarNav)
 		{

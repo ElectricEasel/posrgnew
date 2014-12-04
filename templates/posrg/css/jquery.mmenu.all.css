@@ -447,7 +447,7 @@ html.mm-opened.mm-dragging #mm-blocker {
 .mm-menu.mm-fixedlabels .mm-list {
   background: inherit; }
   .mm-menu.mm-fixedlabels .mm-list > li.mm-label {
-    background: inherit !important;
+    background: inherit;
     opacity: 0.97;
     height: 25px;
     overflow: visible;
@@ -896,7 +896,7 @@ html.mm-opening.mm-front .mm-fixed-bottom {
   bottom: 0; }
 
 html.mm-opened.mm-fullscreen .mm-page {
-  box-shadow: none !important; }
+  box-shadow: none; }
 
 /*
 	jQuery.mmenu position extension CSS
@@ -1280,9 +1280,9 @@ html.mm-opened.mm-black .mm-page {
     .mm-list > li > a, .mm-list > li > span {
 	    text-align: left;
     }
-    dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:hover,
     .mm-list > li > a:hover, .mm-list > li > span:hover {
-	    background-color: #fafafa !important;
+	    background-color: #fafafa;
 	    color: #444;
     }
 }
