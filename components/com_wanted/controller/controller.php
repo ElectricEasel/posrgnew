@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class WantedController extends JController
+class WantedController extends JControllerLegacy
 {
 	protected $app;
 
@@ -30,6 +30,7 @@ class WantedController extends JController
 	public function display($cachable = false, $urlparams = false)
 	{
 		$view = $this->app->input->get('view');
+        $task = $this->app->input->get('task');
 
 		if (!$task && !$view)
 		{

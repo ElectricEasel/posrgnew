@@ -31,6 +31,7 @@
 	<positions>
 		<position>search</position>
 		<position>menu</position>
+        <position>banner</position>
 		<position>mob-menu-above</position>
 		<position>mob-menu-below</position>
 		<position>slideshow</position>

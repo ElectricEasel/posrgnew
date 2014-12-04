@@ -68,6 +68,7 @@ unset($this->_styleSheets[JURI::root(true).'/components/com_rsform/assets/css/fr
 		<?php if (@filesize('templates/' . $this->template . '/js/analytics-head.js') > 5): ?>
 			   <?php include_once('templates/' . $this->template . '/js/analytics-head.js'); ?>
 		<?php endif; ?>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400' rel='stylesheet' type='text/css'>
         <!--Start of Zopim Live Chat Script-->
         <script type="text/javascript">
             window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=

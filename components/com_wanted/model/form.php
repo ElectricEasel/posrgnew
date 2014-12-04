@@ -35,7 +35,7 @@ class WantedModelForm extends JModelItem
 		if (is_null($this->_item))
 		{
 			$id = $this->getState('item.id');
-
+            //$id = !is_null($id) ? $id : -1;
 			$db = $this->getDbo();
 			$query = $db->getQuery(true)
 				->select('*')

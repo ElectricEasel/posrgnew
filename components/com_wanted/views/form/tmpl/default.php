@@ -13,7 +13,7 @@ JHtml::_('behavior.formvalidation');
 				<label for="wanted_title"><?php echo JText::_('TITLE') ?> <span class="req" >*</span></label>
 			</div>
 			<div class="value">
-				<input name="title" value="<?php echo $this->item->title ?>" id="wanted_title" class="gm-input required" type="text" maxlength="50" />
+				<input name="title" id="wanted_title" class="gm-input required" type="text" maxlength="50" />
 			</div>
 		</div>
 

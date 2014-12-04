@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class WantedViewManager extends JView
+class WantedViewManager extends JViewLegacy
 {
 	public function display($tpl = null)
 	{

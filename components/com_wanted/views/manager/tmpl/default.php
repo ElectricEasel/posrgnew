@@ -35,10 +35,10 @@ $i     = 0;
 			$k = 0;
 			$cb = 0;
 			foreach ($this->items as $item) :
-				$img1    = $item->published ? 'tick.png' : 'publish_x.png';
-				$img2    = $item->frontpage ? 'tick.png' : 'publish_x.png';
-				$alt     = $item->published ? JText::_('published') : JText::_('published');
-				$checked = JHtml::_('grid.id', $i, $item->id);
+                /*$img1    = $item->published ? 'tick.png' : 'publish_x.png';
+                $img2    = $item->frontpage ? 'tick.png' : 'publish_x.png';
+                $alt     = $item->published ? JText::_('published') : JText::_('published');
+                $checked = JHtml::_('grid.id', $i, $item->id); */
 				?>
 				<tr class="<?php echo "row$k"; ?>">
                     <td align="center"  class="handle">

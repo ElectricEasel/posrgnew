@@ -6098,6 +6098,12 @@ h4 {
   margin: 25px 0 10px;
   font-weight: bold;
 }
+h5 {
+  color: #000000;
+  font-size: 16px;
+  margin: 15px 0 20px;
+  font-weight: bold;
+}
 ul.blue-arrow {
   margin: 0 0 15px 20px;
   padding: 0;
@@ -6714,6 +6720,9 @@ ul.two-col-list li {
 }
 .header-contact {
   background-image: url(../images/headers/h-contact.jpg);
+}
+.header-sell {
+  background-image: url(../images/headers/h-sell.jpg);
 }
 @media (max-width: 767px) {
   .page-header {
@@ -8250,7 +8259,8 @@ fieldset[disabled] .com_zoo #yoo-zoo #userForm .gray_box .formContainer .btn.act
 .career-form-wrap,
 .specials-form-wrap,
 .services-form-wrap,
-.quote-form-wrap {
+.quote-form-wrap,
+.trade-in-form-wrap {
   background: #f4f9fd;
   border: 1px solid #e3e3e3;
   color: #0861ce;
@@ -8260,13 +8270,15 @@ span.red {
   color: #f00;
 }
 #userForm li,
-#services-form li {
+#services-form li,
+#trade-in-trade-up li {
   margin: 5px 0;
   float: left;
   padding: 0 10px;
 }
 #userForm .formCaption,
-#services-form .formCaption {
+#services-form .formCaption,
+#trade-in-trade-up .formCaption {
   display: block;
   float: left;
   color: #06c;
@@ -8274,92 +8286,139 @@ span.red {
   line-height: 1.2em;
 }
 #userForm .formBody,
-#services-form .formBody {
+#services-form .formBody,
+#trade-in-trade-up .formBody {
   display: block;
   float: left;
 }
 #userForm .formBody input[type="text"],
 #services-form .formBody input[type="text"],
+#trade-in-trade-up .formBody input[type="text"],
 #userForm .formBody textarea,
-#services-form .formBody textarea {
+#services-form .formBody textarea,
+#trade-in-trade-up .formBody textarea {
   border: 1px solid #CACACA;
   color: #000;
   font-size: 14px;
   padding: 4px;
 }
 #userForm .formBody input,
-#services-form .formBody input {
+#services-form .formBody input,
+#trade-in-trade-up .formBody input {
   height: 26px;
 }
 #userForm .formBody textarea,
-#services-form .formBody textarea {
+#services-form .formBody textarea,
+#trade-in-trade-up .formBody textarea {
   height: 158px;
 }
 #userForm .formBody select,
-#services-form .formBody select {
+#services-form .formBody select,
+#trade-in-trade-up .formBody select {
   width: 100%;
+  height: 26px;
+  -webkit-appearance: menulist-button;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 20%, #fdfdfd 27%, #f5f5f5 47%, #ececec 53%, #ececec 80%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
 }
 #userForm li.half,
-#services-form li.half {
+#services-form li.half,
+#trade-in-trade-up li.half {
   width: 50%;
 }
 #userForm li.half .formCaption,
-#services-form li.half .formCaption {
+#services-form li.half .formCaption,
+#trade-in-trade-up li.half .formCaption {
   width: 25%;
 }
 #userForm li.half .formBody,
-#services-form li.half .formBody {
+#services-form li.half .formBody,
+#trade-in-trade-up li.half .formBody {
   width: 75%;
 }
 #userForm li.full,
-#services-form li.full {
+#services-form li.full,
+#trade-in-trade-up li.full {
   width: 100%;
 }
 #userForm li.full .formBody,
 #services-form li.full .formBody,
+#trade-in-trade-up li.full .formBody,
 #userForm li.full .formCaption,
-#services-form li.full .formCaption {
+#services-form li.full .formCaption,
+#trade-in-trade-up li.full .formCaption {
   width: 100%;
 }
 #userForm .rsform-block-submit,
-#services-form .rsform-block-submit {
+#services-form .rsform-block-submit,
+#trade-in-trade-up .rsform-block-submit {
   text-align: center;
   width: 100%;
   margin-top: 25px;
 }
 #userForm .rsform-block-submit .formBody,
-#services-form .rsform-block-submit .formBody {
+#services-form .rsform-block-submit .formBody,
+#trade-in-trade-up .rsform-block-submit .formBody {
   float: none;
 }
 #userForm .rsform-block-submit #submit,
-#services-form .rsform-block-submit #submit {
+#services-form .rsform-block-submit #submit,
+#trade-in-trade-up .rsform-block-submit #submit {
   font-size: 12px;
   padding: 3px 45px;
   text-transform: lowercase;
 }
 @media (max-width: 991px) {
   #userForm .formCaption,
-  #services-form .formCaption {
+  #services-form .formCaption,
+  #trade-in-trade-up .formCaption {
     margin-bottom: 3px;
   }
   #userForm .rsform-block,
-  #services-form .rsform-block {
+  #services-form .rsform-block,
+  #trade-in-trade-up .rsform-block {
     width: 100% !important;
   }
   #userForm .rsform-block .formBody,
-  #services-form .rsform-block .formBody {
+  #services-form .rsform-block .formBody,
+  #trade-in-trade-up .rsform-block .formBody {
     width: 100% !important;
   }
   #userForm .rsform-block input,
-  #services-form .rsform-block input {
+  #services-form .rsform-block input,
+  #trade-in-trade-up .rsform-block input,
+  #userForm .rsform-block textarea,
+  #services-form .rsform-block textarea,
+  #trade-in-trade-up .rsform-block textarea {
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  #userForm .rsform-block input,
+  #services-form .rsform-block input,
+  #trade-in-trade-up .rsform-block input,
+  #userForm .rsform-block select,
+  #services-form .rsform-block select,
+  #trade-in-trade-up .rsform-block select {
     height: 38px;
   }
+  #userForm .rsform-block select,
+  #services-form .rsform-block select,
+  #trade-in-trade-up .rsform-block select {
+    margin-bottom: 15px;
+  }
+  #userForm h2,
+  #services-form h2,
+  #trade-in-trade-up h2 {
+    margin: 5px 0;
+  }
   #userForm .rsform-block-notes textarea,
-  #services-form .rsform-block-notes textarea {
+  #services-form .rsform-block-notes textarea,
+  #trade-in-trade-up .rsform-block-notes textarea {
     width: 100% !important;
   }
   #userForm .rsform-block-submit #submit,
-  #services-form .rsform-block-submit #submit {
+  #services-form .rsform-block-submit #submit,
+  #trade-in-trade-up .rsform-block-submit #submit {
     border-radius: 0;
     height: 45px;
     font-size: 17px;
@@ -8385,22 +8444,10 @@ span.red {
     text-transform: capitalize;
   }
   #userForm .rsform-block-submit #submit:hover,
-  #services-form .rsform-block-submit #submit:hover {
+  #services-form .rsform-block-submit #submit:hover,
+  #trade-in-trade-up .rsform-block-submit #submit:hover {
     text-decoration: none;
     color: #ffffff;
-  }
-}
-@media (max-width: 991px) {
-  #userForm .rsform-block input,
-  #services-form .rsform-block input,
-  #userForm .rsform-block textarea,
-  #services-form .rsform-block textarea {
-    border-radius: 6px;
-    margin-bottom: 15px;
-  }
-  #userForm h2,
-  #services-form h2 {
-    margin: 5px 0;
   }
 }
 .quote-form-wrap #userForm {
@@ -8423,6 +8470,9 @@ span.red {
   box-shadow: none;
   border: 1px solid #999;
   border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background: #ffffff;
   /* Old browsers */
   background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 20%, #fdfdfd 27%, #f5f5f5 47%, #ececec 53%, #ececec 80%, #f2f2f2 100%);
@@ -8446,6 +8496,21 @@ span.red {
 .quote-form-wrap #userForm li h4 {
   margin: 0;
 }
+@media (max-width: 991px) {
+  .quote-form-wrap #userForm li.full {
+    padding-left: 10px;
+  }
+  .quote-form-wrap #userForm li.full .formBody {
+    padding-right: 0;
+  }
+  .quote-form-wrap #userForm li.full .formBody .btnCal {
+    height: 38px;
+    width: 40px;
+  }
+  .quote-form-wrap #userForm li.full.rsform-block-date-available {
+    padding-right: 50px;
+  }
+}
 .specials-form-wrap #userForm .rsform-block-notes {
   margin-top: 30px;
 }
@@ -8457,6 +8522,50 @@ span.red {
 @media (max-width: 767px) {
   .specials-form-wrap #userForm .rsform-block-notes {
     margin-top: 0;
+  }
+}
+.trade-in-form-wrap #trade-in-trade-up li.heading {
+  float: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.trade-in-form-wrap #trade-in-trade-up li.heading h4 {
+  margin: 0;
+}
+.trade-in-form-wrap #trade-in-trade-up .formCaption {
+  color: #000000;
+}
+.trade-in-form-wrap #trade-in-trade-up #btn5_0 {
+  border: none;
+  background: #0066cc;
+  width: 45px;
+  position: absolute;
+  margin-left: 15px;
+  color: #ffffff;
+}
+.trade-in-form-wrap #trade-in-trade-up #btn5_0:hover {
+  background: #007fff;
+}
+.trade-in-form-wrap #trade-in-trade-up .rsform-block-date-available .formBody {
+  padding-right: 60px;
+}
+@media (min-width: 992px) {
+  .trade-in-form-wrap #trade-in-trade-up li {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  .trade-in-form-wrap #trade-in-trade-up li.half .formCaption {
+    width: 35%;
+  }
+  .trade-in-form-wrap #trade-in-trade-up li.half .formBody {
+    width: 65%;
+  }
+  .trade-in-form-wrap #trade-in-trade-up li.full .formCaption {
+    width: 17.1%;
+  }
+  .trade-in-form-wrap #trade-in-trade-up li.full .formBody {
+    width: 82.9%;
   }
 }
 #services-form .formCaption {
@@ -8976,4 +9085,177 @@ span.red {
 }
 .testimonial:last-child {
   border-bottom: none;
+}
+#wanted {
+  text-align: center;
+  min-height: 952px;
+  position: relative;
+}
+#wanted .top {
+  background: url(/templates/posrg/images/wanted-top.jpg) center top no-repeat;
+  height: 235px;
+}
+#wanted .top h1 {
+  display: none;
+  font-size: 50px;
+  margin: 0;
+}
+#wanted .mid {
+  background: url(/templates/posrg/images/wanted-mid.jpg) center top repeat-y;
+  min-height: 402px;
+}
+#wanted .bot {
+  background: url(/templates/posrg/images/wanted-bot.jpg) center top no-repeat;
+  height: 295px;
+  position: relative;
+}
+#wanted .bot h1 {
+  display: none;
+  font-size: 36px;
+  margin: 0;
+}
+#wanted .bot h1 a {
+  color: #311a05;
+}
+#wanted h2 {
+  font-size: 26px;
+  margin: 0 auto 20px;
+  line-height: 32px;
+  padding-right: 20px;
+}
+#wanted h3 {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 26px 0 10px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+#wanted h1,
+#wanted h2,
+#wanted h3 {
+  color: #311a05;
+  font-family: "Droid Serif", serif;
+  font-weight: normal;
+}
+#wanted h2,
+#wanted h3,
+#wanted #wanted-list {
+  width: 700px;
+}
+#wanted #wanted-list {
+  padding-left: 75px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+#wanted #wanted-list ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+#wanted #wanted-list ul li {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style-type: disc;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0 20px 16px 0;
+}
+@media (min-width: 768px) {
+  #wanted #wanted-list ul li {
+    float: left;
+    width: 50%;
+  }
+}
+#wanted .wanted-chat {
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 950px;
+  height: 170px;
+  position: absolute;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  #wanted .top,
+  #wanted .mid,
+  #wanted .bot {
+    background-size: 100%;
+  }
+  #wanted .top {
+    height: 192px;
+  }
+  #wanted .bot {
+    height: 230px;
+  }
+  #wanted h2,
+  #wanted h3,
+  #wanted #wanted-list {
+    width: 560px;
+  }
+  #wanted #wanted-list {
+    padding-left: 45px;
+  }
+  #wanted #wanted-list ul li {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  #wanted .top,
+  #wanted .mid,
+  #wanted .bot {
+    background: none;
+  }
+  #wanted .top,
+  #wanted .bot {
+    height: auto;
+  }
+  #wanted .top h1 {
+    display: block;
+  }
+  #wanted .bot h1 {
+    display: block;
+  }
+  #wanted h2,
+  #wanted h3,
+  #wanted #wanted-list {
+    width: 100%;
+  }
+  #wanted h2 {
+    padding-right: 0;
+    font-size: 20px;
+  }
+  #wanted #wanted-list {
+    padding: 0;
+  }
+  #wanted #wanted-list ul {
+    padding: 0 10px;
+  }
+  #wanted #wanted-list ul li {
+    padding-right: 0;
+  }
+  #wanted .wanted-chat {
+    display: none;
+  }
+}
+#adminForm.gm-form {
+  max-width: 700px;
+  margin: 0 0 0 auto;
+}
+#adminForm.gm-form table.wanted th {
+  padding: 10px;
+  text-align: center;
+}
+#adminForm.gm-form table.wanted td {
+  padding: 10px;
+  line-height: 12px;
+}
+#adminForm.gm-form table.wanted td.handle {
+  font-size: 30px;
+  cursor: move;
+  padding: 10px 0 10px 10px;
 }
