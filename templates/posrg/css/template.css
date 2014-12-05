@@ -6339,8 +6339,7 @@ ul.two-col-list li {
 .mm-menu .mm-list li.item-110 a:after {
   border: none;
 }
-.mm-list li a:hover,
-.mm-list li span:hover {
+.mm-list li a:hover {
   /* menu hover bg */
   background-color: #d0d0d0 !important;
 }
@@ -6376,8 +6375,6 @@ html.mm-opening .mm-page {
   color: #ffffff !important;
   font-weight: normal !important;
 }
-.mm-menu.mm-light .mm-list > li.mm-selected > a.selected:not(.mm-subopen),
-.mm-menu.mm-light .mm-list > li.mm-selected a.selected > span,
 .mm-menu li a.selected {
   /* selected bg */
   background-color: #d0d0d0 !important;
@@ -6415,7 +6412,6 @@ html.mm-opening .mm-page {
   display: block !important;
 }
 .mm-menu.mm-light .mm-list > li.mm-selected > a.selected-inner:not(.mm-subopen),
-.mm-menu.mm-light .mm-list > li.mm-selected a.selected > span,
 li a.selected-inner,
 .mm-list.dropdown-menu.sub-sub li a {
   /* submenu selected bg */

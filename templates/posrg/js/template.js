@@ -54,15 +54,17 @@ jQuery(document).ready(function($){
 
     // mobile menu changes in behavior
     var mobile_parent = $('#sidebar li.deeper > a');
-    var mobile_sub_parent = $('#sidebar li.deeper.dropdown-submenu > a');
-    var subsub = $('.sub-sub');
+    var hasToggled = false;
 
-    $('.navbar-toggle').click(function(){
-        mobile_parent.each(function(){
-            var sub_dropdown_id = $(this).prev().attr('href');
-            var sub_dropdown = $(sub_dropdown_id);
-            $(this).after(sub_dropdown);
-        });
+    $('.navbar-toggle').click(function () {
+        if (!hasToggled) {
+            mobile_parent.each(function () {
+                var sub_dropdown_id = $(this).prev().attr('href');
+                var sub_dropdown = $(sub_dropdown_id);
+                $(this).after(sub_dropdown);
+            });
+            hasToggled = true;
+        }
     });
 
     mobile_parent.click(function(){
