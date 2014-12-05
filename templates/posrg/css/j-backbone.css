@@ -87,13 +87,13 @@
     border-radius: 6px 0 6px 6px;
 }
 ul li.dropdown-submenu:hover ul.dropdown-menu {
-    display: block!important;
+    display: block;
 }
 ul li.dropdown-submenu:hover ul ul.dropdown-menu {
-    display: none!important;
+    display: none;
 }
 ul li.dropdown-submenu ul li.dropdown-submenu:hover ul.dropdown-menu {
-    display: block!important;
+    display: block;
 }
 ul li.dropdown-submenu .caret {
     margin-left: 5px;
@@ -492,10 +492,11 @@ a.go-top {
 		overflow:hidden;
 	}
 .joostrapmenu > li {
-float: none;
-border: 0;
-background: none;
-padding: 0;
-border-top: 1px solid #ddd;
+    float: none;
+    border: 0;
+    background: none;
+    padding: 0;
+    border-top: 1px solid #ddd;
+}
 }
 /* end - joostrap menu module for secondary menu usage - styling at breakpoint  */
