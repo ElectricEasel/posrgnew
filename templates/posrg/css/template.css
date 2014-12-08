@@ -7122,7 +7122,6 @@ li a.selected-inner,
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
   vertical-align: middle;
   background-color: #ffffff;
   background-image: none;
@@ -7132,6 +7131,7 @@ li a.selected-inner,
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  color: #555555;
 }
 .home .inventory-search input[type="text"]:focus,
 .home .inventory-search select:focus {
@@ -7169,6 +7169,20 @@ fieldset[disabled] .home .inventory-search select {
 textarea.home .inventory-search input[type="text"],
 textarea.home .inventory-search select {
   height: auto;
+}
+.home .inventory-search input[type="text"]::-webkit-input-placeholder {
+  color: #555555;
+}
+.home .inventory-search input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #555555;
+}
+.home .inventory-search input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #555555;
+}
+.home .inventory-search input[type="text"]:-ms-input-placeholder {
+  color: #555555;
 }
 .home .inventory-search legend {
   border: medium none;
@@ -7364,6 +7378,8 @@ textarea.home .inventory-search select {
   background: url(../images/bg-body.png) repeat 0 0 #f3f3f3;
   padding: 10px 20px;
   border-top: 8px solid #006ab8;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 .service-box ul {
   margin: 0;
@@ -7372,13 +7388,26 @@ textarea.home .inventory-search select {
   list-style: none outside none;
   font-size: 13px;
   border-bottom: 1px solid #bfbfbf;
-  height: 100%;
 }
 .service-box ul li {
   background: url(../images/li-grey.png) no-repeat 0 0 transparent;
   padding-left: 15px;
   margin-bottom: 15px;
   line-height: 1.2em;
+}
+@media (min-width: 992px) {
+  .service-box ul {
+    height: 431px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .service-box ul {
+    padding: 20px 6px;
+    height: 446px;
+  }
+  .service-box ul li {
+    padding-left: 12px;
+  }
 }
 .market_side {
   position: relative;
@@ -9367,4 +9396,12 @@ span.red {
   font-size: 30px;
   cursor: move;
   padding: 10px 0 10px 10px;
+}
+#gm-family-form .item .label {
+  text-align: left;
+}
+#gm-family-form .item .label label {
+  color: #000000;
+  font-size: 13px;
+  font-weight: normal;
 }

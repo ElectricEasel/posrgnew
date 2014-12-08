@@ -52,6 +52,20 @@
     -o-font-smoothing: auto;
     font-smoothing: subpixel-antialiased;
 }
+.placeholderText(@color) {
+    &::-webkit-input-placeholder {
+        color: @color;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: @color;
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+        color: @color;
+    }
+    &:-ms-input-placeholder {
+        color: @color;
+    }
+}
 
 .body-bg {
     background: url(../images/bg-body.png) repeat 0 0 @gray-lightest;
@@ -1106,6 +1120,10 @@ html.mm-opening #mm-blocker, html.mm-opening .mm-page {
     input[type="text"],
     select {
         .form-control();
+        color: #555555;
+    }
+    input[type="text"] {
+        .placeholderText(#555555);
     }
     legend {
         border: medium none;
@@ -1228,6 +1246,8 @@ html.mm-opening #mm-blocker, html.mm-opening .mm-page {
         .body-bg();
         padding: 10px 20px;
         border-top: 8px solid #006ab8;
+        font-size: 13px;
+        text-transform: uppercase;
     }
     ul {
         margin: 0;
@@ -1236,13 +1256,23 @@ html.mm-opening #mm-blocker, html.mm-opening .mm-page {
         list-style: none outside none;
         font-size: 13px;
         border-bottom: 1px solid #bfbfbf;
-        height: 100%;
 
         li {
             background: url(../images/li-grey.png) no-repeat 0 0 transparent;
             padding-left: 15px;
             margin-bottom: 15px;
             line-height: 1.2em;
+        }
+        @media (min-width:@screen-md-min) {
+            height: 431px;
+        }
+        @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+            padding: 20px 6px;
+            height: 446px;
+
+            li {
+                padding-left: 12px;
+            }
         }
     }
 }
@@ -2977,5 +3007,14 @@ span.red {
             cursor: move;
             padding: 10px 0 10px 10px;
         }
+    }
+}
+#gm-family-form .item .label {
+    text-align: left;
+
+    label {
+        color: @black;
+        font-size: 13px;
+        font-weight: normal;
     }
 }

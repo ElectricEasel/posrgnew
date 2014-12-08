@@ -23,6 +23,7 @@ class WantedModelForm extends JModelItem
 
 		$id = $this->app->input->getInt('id');
 		$this->setState('item.id', $id);
+        //var_dump($id);die;
 
 		$params = $this->app->getParams();
 		$this->setState('params', $params);
@@ -35,14 +36,24 @@ class WantedModelForm extends JModelItem
 		if (is_null($this->_item))
 		{
 			$id = $this->getState('item.id');
-            //$id = !is_null($id) ? $id : -1;
-			$db = $this->getDbo();
-			$query = $db->getQuery(true)
-				->select('*')
-				->from('#__wanted')
-				->where('id = ' . $id);
+            if ($id)
+            {
+                $db = $this->getDbo();
+                $query = $db->getQuery(true)
+                    ->select('*')
+                    ->from('#__wanted')
+                    ->where('id = ' . $id);
 
-			$this->_item = $db->setQuery($query)->loadObject();
+                $this->_item = $db->setQuery($query)->loadObject();
+            }
+            else
+            {
+                $this->_item = (object) [
+                    'id' => null,
+                    'title' => null,
+                    'ordering' => null
+                ];
+            }
 		}
 
 		return $this->_item;
