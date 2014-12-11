@@ -5,7 +5,8 @@ class WantedViewList extends JViewLegacy
 	public function display($tpl = null)
 	{
 		$this->items = $this->get('Items');
-		$this->pagination = $this->get('Pagination');
+        JArrayHelper::sortObjects($this->items,'ordering');
+        $this->pagination = $this->get('Pagination');
 
 		$this->prepareDocument();
 

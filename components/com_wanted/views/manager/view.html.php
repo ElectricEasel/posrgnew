@@ -14,6 +14,8 @@ class WantedViewManager extends JViewLegacy
 			'search'    => $this->state->get('filter.search')
 		);
 
+        $this->prepareDocument();
+
 		parent::display($tpl);
 	}
 
@@ -22,4 +24,50 @@ class WantedViewManager extends JViewLegacy
 		$image = '<img src="' . JUri::base() . 'components/com_product/assets/images/' . $image . '" alt="save order" />';
 		return '<a href="javascript:saveorder('.(count( $rows )-1).', \''.$task.'\')" title="'.JText::_( 'Save Order' ).'">'.$image.'</a>';
 	}
+
+    protected function prepareDocument()
+    {
+        JFactory::getDocument()
+            ->addScript('components/com_wanted/assets/js/sortablelist.js')
+            ->addScriptDeclaration('
+			// <![CDATA[
+			$(function() {
+            var sortableList = $("#sortable");
+            sortableList.sortable({
+                cursor:"move",
+                handle: "td:first",
+                update: function(event,ui) {
+                    // Get the item IDs in an array
+                    var cids = Array.prototype.map.call(
+                        $(\'[name="cid"]\'),
+                        function (item) {
+                            return item.value;
+                        }
+                    );
+
+                    var ordering = Object.keys(cids);
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.php",
+                        data: {
+                            option: "com_wanted",
+                            task: "saveOrderAjax",
+                            tmpl: "component",
+                            cid: cids,
+                            order: ordering
+                        },
+                        context: this,
+                        success: function() {
+                            $("#success-message").show().delay(1500).fadeOut(200);
+                        }
+                    })
+                }
+            });
+            sortableList.disableSelection();
+        });
+
+			// ]]>
+			');
+    }
 }

@@ -6818,6 +6818,15 @@ li a.selected-inner,
 .header h1 strong {
   color: #0066cc;
 }
+@media (max-width: 767px) {
+  .header {
+    background-position: 0 0;
+    text-align: center;
+  }
+  .header h1 {
+    width: 100%;
+  }
+}
 .header-about {
   background-image: url(../images/headers/h-about.jpg);
 }
