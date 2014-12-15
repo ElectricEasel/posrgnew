@@ -6822,6 +6822,7 @@ li a.selected-inner,
   .header {
     background-position: 0 0;
     text-align: center;
+    border-top: 6px solid #0066cc;
   }
   .header h1 {
     width: 100%;
@@ -7141,6 +7142,7 @@ li a.selected-inner,
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   color: #555555;
+  padding: 6px 8px 6px 12px;
 }
 .home .inventory-search input[type="text"]:focus,
 .home .inventory-search select:focus {
@@ -7215,6 +7217,35 @@ textarea.home .inventory-search select {
 .home .inventory-search form:after {
   clear: both;
 }
+@media (max-width: 767px) {
+  .home .inventory-search .btn-primary {
+    border-radius: 0;
+    height: 45px;
+    font-size: 17px;
+    color: #ffffff;
+    background: #275daa;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #275daa), color-stop(16%, #265aa6), color-stop(75%, #1d4a89), color-stop(100%, #1b4580));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#275daa', endColorstr='#1b4580', GradientType=0);
+    /* IE6-9 */
+    width: 100%;
+  }
+  .home .inventory-search .btn-primary:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
 .home #below-content {
   margin: 10px -7px;
 }
@@ -7262,6 +7293,38 @@ textarea.home .inventory-search select {
   .home #below-content .module:nth-child(odd) {
     clear: both;
   }
+  .home #below-content .module a.btn {
+    border-radius: 0;
+    height: 45px;
+    font-size: 17px;
+    color: #ffffff;
+    background: #275daa;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #275daa), color-stop(16%, #265aa6), color-stop(75%, #1d4a89), color-stop(100%, #1b4580));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #275daa 0%, #265aa6 16%, #1d4a89 75%, #1b4580 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#275daa', endColorstr='#1b4580', GradientType=0);
+    /* IE6-9 */
+    height: auto;
+    float: none;
+    width: 100%;
+  }
+  .home #below-content .module a.btn:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .home #below-content .module p {
+    min-height: 80px !important;
+  }
 }
 @media (max-width: 400px) {
   .home #below-content .module {
@@ -7274,17 +7337,95 @@ textarea.home .inventory-search select {
   border-bottom: 1px solid #bfbfbf;
   height: 100%;
 }
-.home #below-content .module-content img {
+@media (max-width: 767px) and (min-width: 481px) {
+  .home #below-content .module-content {
+    overflow: hidden;
+  }
+}
+.home #below-content .module-content .img-wrap {
   border-bottom: 5px solid #0066cc;
+}
+.home #below-content .module-content .img-wrap img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-@media (max-width: 480px) {
-  .home #below-content .module-content img {
+@media (min-width: 992px) {
+  .home #below-content .module-content .img-wrap img {
+    height: 107px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home #below-content .module-content .img-wrap img {
+    height: 81px;
+  }
+}
+@media (max-width: 767px) and (min-width: 481px) {
+  .home #below-content .module-content .img-wrap img {
+    height: 76px;
+    width: 215px;
+    max-width: none;
+  }
+}
+@media (max-width: 767px) {
+  .home #below-content .module-content .img-wrap img {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+}
+.home #below-content .module-content .img-box {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 5px solid #0066cc;
+  height: 0;
+  padding-bottom: 35%;
+  position: relative;
+}
+.home #below-content .module-content .img-box .img-box-item {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.home #below-content .module-hardware .img-box {
+  background-image: url(/images/tile-new-hardware.jpg);
+}
+.home #below-content .module-ebay .img-box {
+  background-image: url(/images/tile-ebay.jpg);
+}
+.home #below-content .module-ebay .img-box .img-box-item {
+  background-image: url(/images/tile-ebay-inner.png);
+  top: -7px;
+  left: 39%;
+  padding-bottom: 37%;
+}
+.home #below-content .module-trade .img-box {
+  background-image: url(/images/tile-trade.jpg);
+}
+.home #below-content .module-trade .img-box .img-box-item {
+  background-image: url(/images/tile-trade-inner.png);
+  top: -15px;
+  left: 68%;
+  padding-bottom: 37%;
+}
+.home #below-content .module-advantage .img-box {
+  background-image: url(/images/tile-advantage.jpg);
+}
+.home #below-content .module-contact .img-box {
+  background-image: url(/images/tile-contact.jpg);
+}
+.home #below-content .module-chat .img-box {
+  background-image: url(/images/tile-chat.jpg);
+}
+.home #below-content .module-chat .img-box .img-box-item {
+  background-image: url(/images/tile-chat-inner.png);
+  bottom: 0;
+  left: 57%;
+  padding-bottom: 39%;
 }
 .home #below-content .module-text {
   padding: 15px;
@@ -7329,25 +7470,6 @@ textarea.home .inventory-search select {
   padding: 15px;
   border-bottom: 5px solid #0066cc;
   font-weight: bold;
-}
-.home #below-content .module-ebay img {
-  margin: -7px 0 0 0;
-}
-.home #below-content .module-trade img {
-  margin: -19px 0 0;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .home #below-content .module-trade img {
-    margin: -15px 0 0;
-  }
-}
-.home #below-content .module-chat img {
-  margin: -12px 0 0;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .home #below-content .module-chat img {
-    margin: -10px 0 0;
-  }
 }
 .home #below-content a.btn {
   display: inline-block;
