@@ -33,6 +33,8 @@ jQuery(document).ready(function($){
     $('.navbar-nav .dropdown-toggle').removeAttr('data-toggle');
 
     $('#mfc').chosen();
+    $('.chzn-select').chosen();
+    $('#state').chosen();
 
     // reveals caret when a menu item with 'no-caret' class has visible children (fields only visible for logged in users)
     var parent = $('ul.nav.menu a.no-caret').parent();
