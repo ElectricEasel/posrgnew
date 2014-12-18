@@ -8920,6 +8920,11 @@ span.red {
     padding-right: 50px;
   }
 }
+@media (max-width: 767px) {
+  .quote-form-wrap #userForm {
+    max-width: none;
+  }
+}
 .specials-form-wrap #userForm .rsform-block-notes {
   margin-top: 30px;
 }

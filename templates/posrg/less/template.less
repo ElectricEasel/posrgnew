@@ -2486,8 +2486,7 @@ span.red {
     li h4 {
         margin: 0;
     }
-    @media (max-width:@screen-sm-max)
-    {
+    @media (max-width:@screen-sm-max) {
         li.full {
             padding-left: 10px;
 
@@ -2503,6 +2502,9 @@ span.red {
         li.full.rsform-block-date-available {
             padding-right: 50px;
         }
+    }
+    @media (max-width:@screen-xs-max) {
+        max-width: none;
     }
 }
 .specials-form-wrap {
