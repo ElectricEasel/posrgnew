@@ -90,7 +90,7 @@ class PartsModelList extends JModelList
 
 		$selected = $this->getState('filter.mfc');
 		$attribs = array(
-			'class' => 'gm-select',
+			'class' => 'gm-select chzn-select',
 			'data-placeholder' => 'Select a MFR'
 		);
 

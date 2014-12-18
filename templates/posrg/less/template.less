@@ -58,9 +58,11 @@
     }
     &:-moz-placeholder { /* Firefox 18- */
         color: @color;
+        opacity: 100;
     }
     &::-moz-placeholder {  /* Firefox 19+ */
         color: @color;
+        opacity: 100;
     }
     &:-ms-input-placeholder {
         color: @color;
@@ -567,6 +569,19 @@ html.mm-opening #mm-blocker, html.mm-opening .mm-page {
                 left: 0 !important;
             }
         }
+        @media (max-width:400px) {
+            height: 230px;
+
+            h2 {
+                font-size: 25px !important;
+            }
+            h3 {
+                font-size: 14px;
+            }
+        }
+        @media (max-width:329px) {
+            height: 300px;
+        }
     }
     .brands {
         background-image: url(/templates/posrg/images/slides/slide-brands.jpg);
@@ -832,7 +847,7 @@ html.mm-opening #mm-blocker, html.mm-opening .mm-page {
         font-weight: normal;
         text-shadow: 1px 1px 0 #fff;
         letter-spacing: 1px;
-        font-family: Arial;
+        font-family: Arial, sans-serif;
 
         strong {
             color: @brand-primary;
@@ -842,31 +857,50 @@ html.mm-opening #mm-blocker, html.mm-opening .mm-page {
         background-position: 0 0;
         text-align: center;
         border-top: 6px solid @brand-primary;
+        height: auto;
+        padding: 30px 0;
+        background-size: cover;
 
         h1 {
             width: 100%;
+            position: relative;
         }
     }
 }
 .header-about {
-    background-image: url(../images/headers/h-about.jpg);
+    background-image: url(/templates/posrg/images/headers/h-about.jpg);
+
+    @media (max-width:@screen-xs-max) {
+        text-align: left;
+    }
+    @media (max-width:560px) {
+        text-align: center;
+    }
 }
 .header-advantage {
-    background-image: url(../images/headers/h-advantage.jpg);
+    background-image: url(/templates/posrg/images/headers/h-advantage.jpg);
 }
 .header-services {
-    background-image: url(../images/headers/h-services.jpg);
+    background-image: url(/templates/posrg/images/headers/h-services.jpg);
 }
 .header-contact {
-    background-image: url(../images/headers/h-contact.jpg);
+    background-image: url(/templates/posrg/images/headers/h-contact.jpg);
 }
 .header-sell {
-    background-image: url(../images/headers/h-sell.jpg);
+    background-image: url(/templates/posrg/images/headers/h-sell.jpg);
+}
+.header-inventory {
+    background-image: url(/templates/posrg/images/headers/h-inventory.jpg);
 }
 
-.page-header {
+.page-header, .headline, .contentheading {
     @media (max-width:@screen-xs-max) {
         text-align: center;
+    }
+}
+.page-header h2, .headline h2, .contentheading {
+    @media (max-width:@screen-xs) {
+        font-size: 20px;
     }
 }
 #mainbody .container,
@@ -1147,6 +1181,7 @@ html.mm-opening #mm-blocker, html.mm-opening .mm-page {
     }
     input[type="text"] {
         .placeholderText(#555555);
+        padding: 5px 8px;
     }
     legend {
         border: medium none;
@@ -1550,6 +1585,27 @@ ul#featuredlist {
             margin-right: 7px;
         }
     }
+    @media (max-width:@screen-xs-max) {
+        li {
+            .frame {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .featuredcontent {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+
+                h5 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
 .preferred-oems {
     #mainbody.interior .container {
@@ -1581,6 +1637,7 @@ ul#featuredlist {
         }
         @media (max-width:@screen-sm-max) {
             margin-bottom: 30px;
+            border-top: 6px solid @brand-primary;
 
             h1 {
                 font-size: 36px;
@@ -1897,6 +1954,9 @@ ul#featuredlist {
             width: 100%;
             text-align: center;
 
+            .formControlLabel {
+                display: none;
+            }
             #submit {
                 font-size: 12px;
                 padding: 4px 35px;
@@ -1932,6 +1992,10 @@ ul#featuredlist {
             .rsform-block {
                 width: 100% !important;
                 margin: 0 !important;
+
+                textarea {
+                    margin-bottom: 10px;
+                }
             }
             .rsform-block-submit #submit {
                 .button-mobile-style;
@@ -1942,7 +2006,7 @@ ul#featuredlist {
         }
         @media (max-width: @screen-xs-max) {
             .rsform-block {
-                input {
+                input, textarea {
                     border-radius: 6px;
                     margin-bottom: 15px;
                 }
@@ -2230,7 +2294,7 @@ span.red {
             border: 1px solid #CACACA;
             color: #000;
             font-size: 14px;
-            padding: 5px 10px;
+            padding: 5px 8px;
         }
         input {
             height: 26px;
@@ -2367,11 +2431,16 @@ span.red {
             width: 100% !important;
         }
 
-        .rsform-block-submit #submit {
-            .button-mobile-style;
-            display: block;
-            width: 100%;
-            text-transform: capitalize;
+        .rsform-block-submit {
+            margin-top: 0;
+            padding: 0 10px !important;
+
+            #submit {
+                .button-mobile-style;
+                display: block;
+                width: 100%;
+                text-transform: capitalize;
+            }
         }
     }
 }
@@ -2410,6 +2479,9 @@ span.red {
     }
     li.full.wide .formBody {
         padding-right: 0;
+    }
+    li.rsform-block-submit {
+        padding-left: 200px;
     }
     li h4 {
         margin: 0;
@@ -3176,5 +3248,10 @@ span.red {
         color: @black;
         font-size: 13px;
         font-weight: normal;
+    }
+}
+.glossy-square-blue .thumbnail-scroller.vertical {
+    @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+        right: 10px !important;
     }
 }

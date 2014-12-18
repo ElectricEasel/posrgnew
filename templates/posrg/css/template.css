@@ -6529,6 +6529,22 @@ li a.selected-inner,
     left: 0 !important;
   }
 }
+@media (max-width: 400px) {
+  #home-carousel .slide {
+    height: 230px;
+  }
+  #home-carousel .slide h2 {
+    font-size: 25px !important;
+  }
+  #home-carousel .slide h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 329px) {
+  #home-carousel .slide {
+    height: 300px;
+  }
+}
 #home-carousel .brands {
   background-image: url(/templates/posrg/images/slides/slide-brands.jpg);
 }
@@ -6814,7 +6830,7 @@ li a.selected-inner,
   font-weight: normal;
   text-shadow: 1px 1px 0 #fff;
   letter-spacing: 1px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 .header h1 strong {
   color: #0066cc;
@@ -6824,29 +6840,55 @@ li a.selected-inner,
     background-position: 0 0;
     text-align: center;
     border-top: 6px solid #0066cc;
+    height: auto;
+    padding: 30px 0;
+    background-size: cover;
   }
   .header h1 {
     width: 100%;
+    position: relative;
   }
 }
 .header-about {
-  background-image: url(../images/headers/h-about.jpg);
-}
-.header-advantage {
-  background-image: url(../images/headers/h-advantage.jpg);
-}
-.header-services {
-  background-image: url(../images/headers/h-services.jpg);
-}
-.header-contact {
-  background-image: url(../images/headers/h-contact.jpg);
-}
-.header-sell {
-  background-image: url(../images/headers/h-sell.jpg);
+  background-image: url(/templates/posrg/images/headers/h-about.jpg);
 }
 @media (max-width: 767px) {
-  .page-header {
+  .header-about {
+    text-align: left;
+  }
+}
+@media (max-width: 560px) {
+  .header-about {
     text-align: center;
+  }
+}
+.header-advantage {
+  background-image: url(/templates/posrg/images/headers/h-advantage.jpg);
+}
+.header-services {
+  background-image: url(/templates/posrg/images/headers/h-services.jpg);
+}
+.header-contact {
+  background-image: url(/templates/posrg/images/headers/h-contact.jpg);
+}
+.header-sell {
+  background-image: url(/templates/posrg/images/headers/h-sell.jpg);
+}
+.header-inventory {
+  background-image: url(/templates/posrg/images/headers/h-inventory.jpg);
+}
+@media (max-width: 767px) {
+  .page-header,
+  .headline,
+  .contentheading {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .page-header h2,
+  .headline h2,
+  .contentheading {
+    font-size: 20px;
   }
 }
 #mainbody .container,
@@ -7144,16 +7186,21 @@ li a.selected-inner,
 .home .inventory-search .chosen-container-active.chosen-with-drop b {
   background-position: -18px 7px;
 }
+.home .inventory-search input[type="text"] {
+  padding: 5px 8px;
+}
 .home .inventory-search input[type="text"]::-webkit-input-placeholder {
   color: #555555;
 }
 .home .inventory-search input[type="text"]:-moz-placeholder {
   /* Firefox 18- */
   color: #555555;
+  opacity: 100;
 }
 .home .inventory-search input[type="text"]::-moz-placeholder {
   /* Firefox 19+ */
   color: #555555;
+  opacity: 100;
 }
 .home .inventory-search input[type="text"]:-ms-input-placeholder {
   color: #555555;
@@ -7724,6 +7771,24 @@ ul#featuredlist li a.btn:hover {
 ul#featuredlist li a.btn.button-blue {
   margin-right: 7px;
 }
+@media (max-width: 767px) {
+  ul#featuredlist li .frame {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul#featuredlist li .featuredcontent {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  ul#featuredlist li .featuredcontent h5 {
+    font-size: 18px;
+  }
+}
 .preferred-oems #mainbody.interior .container {
   padding-top: 0;
 }
@@ -7754,6 +7819,7 @@ ul#featuredlist li a.btn.button-blue {
 @media (max-width: 991px) {
   .preferred-oems .pp-header {
     margin-bottom: 30px;
+    border-top: 6px solid #0066cc;
   }
   .preferred-oems .pp-header h1 {
     font-size: 36px;
@@ -8078,6 +8144,9 @@ ul#featuredlist li a.btn.button-blue {
   width: 100%;
   text-align: center;
 }
+.preferred-oems #pref-partners .rsform-block-submit .formControlLabel {
+  display: none;
+}
 .preferred-oems #pref-partners .rsform-block-submit #submit {
   font-size: 12px;
   padding: 4px 35px;
@@ -8112,6 +8181,9 @@ ul#featuredlist li a.btn.button-blue {
     width: 100% !important;
     margin: 0 !important;
   }
+  .preferred-oems #pref-partners .rsform-block textarea {
+    margin-bottom: 10px;
+  }
   .preferred-oems #pref-partners .rsform-block-submit #submit {
     border-radius: 0;
     height: 45px;
@@ -8143,7 +8215,8 @@ ul#featuredlist li a.btn.button-blue {
   }
 }
 @media (max-width: 767px) {
-  .preferred-oems #pref-partners .rsform-block input {
+  .preferred-oems #pref-partners .rsform-block input,
+  .preferred-oems #pref-partners .rsform-block textarea {
     border-radius: 6px;
     margin-bottom: 15px;
   }
@@ -8533,7 +8606,7 @@ span.red {
   border: 1px solid #CACACA;
   color: #000;
   font-size: 14px;
-  padding: 5px 10px;
+  padding: 5px 8px;
 }
 #userForm .formBody input,
 #services-form .formBody input,
@@ -8743,6 +8816,12 @@ span.red {
   #trade-in-trade-up .rsform-block-notes textarea {
     width: 100% !important;
   }
+  #userForm .rsform-block-submit,
+  #services-form .rsform-block-submit,
+  #trade-in-trade-up .rsform-block-submit {
+    margin-top: 0;
+    padding: 0 10px !important;
+  }
   #userForm .rsform-block-submit #submit,
   #services-form .rsform-block-submit #submit,
   #trade-in-trade-up .rsform-block-submit #submit {
@@ -8819,6 +8898,9 @@ span.red {
 }
 .quote-form-wrap #userForm li.full.wide .formBody {
   padding-right: 0;
+}
+.quote-form-wrap #userForm li.rsform-block-submit {
+  padding-left: 200px;
 }
 .quote-form-wrap #userForm li h4 {
   margin: 0;
@@ -9593,4 +9675,9 @@ span.red {
   color: #000000;
   font-size: 13px;
   font-weight: normal;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .glossy-square-blue .thumbnail-scroller.vertical {
+    right: 10px !important;
+  }
 }
