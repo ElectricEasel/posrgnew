@@ -950,6 +950,37 @@ html.mm-opening #mm-blocker, html.mm-opening .mm-page {
     .module-content {
         border-bottom: 1px solid #bfbfbf;
     }
+    .module-video {
+
+        .module-content {
+            padding-bottom: 10px;
+        }
+        a.fancybox-media {
+            display: block;
+            overflow: hidden;
+            margin-bottom: 10px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+        h5, h5 + a {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        h5 {
+            color: #1d79ca;
+            margin-bottom: 0;
+            font-size: 13px;
+        }
+        h5 + a {
+            color: #737373;
+            font-size: 12px;
+        }
+        @media (max-width:@screen-xs-max) {
+            text-align: center;
+        }
+    }
     li.deeper {
         > a {
             border-bottom: none;
@@ -3265,5 +3296,88 @@ span.red {
 .glossy-square-blue .thumbnail-scroller.vertical {
     @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
         right: 10px !important;
+    }
+}
+.video-library {
+    .fancybox-media {
+        img {
+            padding: 10px;
+            border: 1px solid #c9c9c9;
+            max-width: 100%;
+        }
+        h4 {
+            margin: 10px 0 20px;
+            font-size: 18px;
+        }
+        @media (min-width:@screen-sm-min) {
+            img {
+                width: 100%;
+            }
+        }
+        @media (max-width:@screen-xs-max) {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            h4 {
+                text-align: center;
+            }
+        }
+    }
+}
+.trade-in-img {
+    float: right;
+    margin-left: 10px;
+
+    img {
+        padding: 10px;
+        border: 1px solid #c9c9c9;
+    }
+    h6 {
+        text-align: center;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    &:hover h6 {
+        color: @brand-primary;
+    }
+    @media (max-width:600px) {
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+        max-width: 100%;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+}
+.preferred-oems {
+    .pp-header {
+        position: relative;
+    }
+    .play-btn {
+        position: absolute;
+        bottom: 121px;
+        right: 211px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+
+        a {
+            display: block;
+            margin: 8px auto 0;
+        }
+        @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+            right: 200px;
+        }
+        @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+            right: 94px;
+        }
+        @media (max-width: @screen-xs-max) {
+            display: none;
+        }
     }
 }

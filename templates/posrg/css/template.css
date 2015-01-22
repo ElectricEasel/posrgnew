@@ -6931,6 +6931,36 @@ li a.selected-inner,
 .sidebar-nav .module-content {
   border-bottom: 1px solid #bfbfbf;
 }
+.sidebar-nav .module-video .module-content {
+  padding-bottom: 10px;
+}
+.sidebar-nav .module-video a.fancybox-media {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.sidebar-nav .module-video a.fancybox-media img {
+  max-width: 100%;
+}
+.sidebar-nav .module-video h5,
+.sidebar-nav .module-video h5 + a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.sidebar-nav .module-video h5 {
+  color: #1d79ca;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.sidebar-nav .module-video h5 + a {
+  color: #737373;
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  .sidebar-nav .module-video {
+    text-align: center;
+  }
+}
 .sidebar-nav li.deeper > a {
   border-bottom: none;
 }
@@ -9693,5 +9723,87 @@ span.red {
 @media (max-width: 991px) and (min-width: 768px) {
   .glossy-square-blue .thumbnail-scroller.vertical {
     right: 10px !important;
+  }
+}
+.video-library .fancybox-media img {
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  max-width: 100%;
+}
+.video-library .fancybox-media h4 {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .video-library .fancybox-media img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .video-library .fancybox-media img {
+    display: block;
+    margin: 0 auto;
+  }
+  .video-library .fancybox-media h4 {
+    text-align: center;
+  }
+}
+.trade-in-img {
+  float: right;
+  margin-left: 10px;
+}
+.trade-in-img img {
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+}
+.trade-in-img h6 {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.trade-in-img:hover h6 {
+  color: #0066cc;
+}
+@media (max-width: 600px) {
+  .trade-in-img {
+    float: none;
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+  }
+  .trade-in-img img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+.preferred-oems .pp-header {
+  position: relative;
+}
+.preferred-oems .play-btn {
+  position: absolute;
+  bottom: 121px;
+  right: 211px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+.preferred-oems .play-btn a {
+  display: block;
+  margin: 8px auto 0;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .preferred-oems .play-btn {
+    right: 200px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .preferred-oems .play-btn {
+    right: 94px;
+  }
+}
+@media (max-width: 767px) {
+  .preferred-oems .play-btn {
+    display: none;
   }
 }
